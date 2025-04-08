@@ -1,0 +1,101 @@
+{
+  "speakers_present": [
+    "Albanese",
+    "Dutton",
+    "Moderator"
+  ],
+  "debate_segment_topic": "Public Service Employment",
+  "transcript": [
+    "Dutton: ...place which was never the policy at all.",
+    "Dutton: So what we've said is that if there is an arrangement that you've got in your workplace with your boss and you can work from home or whatever the flexible arrangements are, that's fantastic. That's a decision between you and your employer in your workplace. Uh and there's no issue, we've never had any issue with that whatsoever.",
+    "Dutton: Our argument in relation to Canberra was that we wanted to make sure and we do want to make sure uh that taxpayers who are working hard providing their taxes to the Commonwealth government that that money is being spent in the most efficient way.",
+    "Dutton: The government's increased the public service in Canberra by about 20% and we want to make sure uh that we have flexible arrangements in place, that's fine. Uh and we've made that clear, um hopefully that stops the lies from being told.",
+    "Moderator: Just quickly, if you can, Chris Minns is on board, what why not you?",
+    "Albanese: Well, Peter hasn't been able to stand up for his own policy. So I don't know how he can stand up for Australia. Working from home is a really important component in modern families."
+  ],
+  "segment_summary": "Dutton states his support for flexible working arrangements agreed upon between employees and employers. He argues the Coalition wants to ensure taxpayers' money is being spent efficiently, noting the increase in the public service in Canberra. Albanese criticizes Dutton for not being able to stand up for his own policies.",
+  "key_arguments": [
+    {
+      "argument": "The Coalition supports flexible working arrangements agreed upon between employees and employers.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "The Coalition wants to ensure taxpayers' money is being spent efficiently.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Public service numbers in Canberra have increased by 20% under the current government.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Dutton cannot stand up for his own policy and can not stand for Australia",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "Working from home is a really important component",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Dutton attempts to clarify his position and rebut accusations by stating that a lot of the tax that is needed, isn't being put to use. Albanese attacks Dutton's leadership and states the opposite of what Dutton touches on to reassure the audience.",
+    "key_devices_used": [
+      "Clarification",
+      "Rebuttal",
+      "Appeal to taxpayer sentiment",
+      "Direct attack"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "The focus is clear on the people who pay those taxes and what will they do better, while in government. Dutton could be seen as a strong leader for the budget and would do better to help.",
+    "neutral": "Dutton tries to please both sides and it could be seen as authentic. The point is well brought to the attention of why are the numbers up, what is the extra people for? Those questions should be answered.",
+    "progressive": "It's a good step for Australia as a country in need of all the help. The need of more working from home has improved."
+  },
+  "connections_to_previous_segments": "This segment transitions to a discussion on the public service and remote work, a new topic not directly connected to the previous segments. This does build on past statements made on economics.",
+  "interaction_dynamics": "The interaction is a direct back and forth. The Moderator is doing his best to get clear view and answers for the public audience. With back and forth points, the speakers are connecting to each point to make sure they do not get their points confused.",
+  "notable_quotes": [
+    {
+      "quote": "What the flexible arrangements are, that's fantastic",
+      "speaker": "Dutton"
+    },
+    {
+      "quote": "Hasn't been able to stand up for his own policy",
+      "speaker": "Albanese"
+    }
+  ],
+  "topics_addressed": [
+    "Public service",
+    "Employment",
+    "Remote work",
+    "Taxpayer spending"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Dutton",
+        "tone": "Defensive, clarifying"
+      },
+      {
+        "speaker_name": "Albanese",
+        "tone": "Critical"
+      },
+      {
+        "speaker_name": "Moderator",
+        "tone": "Direct"
+      }
+    ],
+    "overall_tone": "Defensive and critical"
+  },
+  "thumbnail_timestamp": 29.0,
+  "segment_tiny_summary": "Policy Stand",
+  "segment_concise_summary": "Dutton describes their policy about remote working, while Albanese criticizes why his numbers doesn't add up."
+}
