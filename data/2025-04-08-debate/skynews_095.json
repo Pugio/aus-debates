@@ -1,0 +1,104 @@
+{
+  "speakers_present": [
+    "Dutton",
+    "Albanese",
+    "Katie Allen"
+  ],
+  "debate_segment_topic": "Economic management",
+  "transcript": [
+    "Dutton: I can't achieve net zero by 2050 without cutting down on the approval times for small modular reactors and nuclear in those systems.",
+    "Dutton: We are paying three times the cost for electricity compared to Ontario where they have nuclear in the system in France, there is 70% nuclear in the system.",
+    "Dutton: Our policy is to make sure that we can underpin our economy with a stable energy market for the next 100 years.",
+    "Dutton: The amortization period or the life of the nuclear reactors lasts between 80 and 100 years and that cost is spread over that.",
+    "Dutton: If the renewables are so much cheaper as the Prime Minister keeps telling you, why has he broken his promise of a $275 a year cut to your electricity bill, when in actual fact it's gone up by $1300 under this government and families are struggling to pay their bills.",
+    "Dutton: The difference between the two policies is that our policy is 44% cheaper and in the interim, we increase the supply of gas into the market because",
+    "Albanese: well we support renewables backed by gas, backed by batteries, backed by hydro",
+    "Albanese: the former government were there for a decade and there were no nuclear",
+    "Katie Allen: will give every Australian a new deal. Labour in the coalition want net zero. Zero jobs, zero prosperity and zero future. A vote for labour all the coalition is a vote to destroy your family and their livelihood and increase the cost of living. China has become a manufacturing superpower on the back of Australian iron ore and coal and its economy is one of the largest in the world. China has continued to build 750 coal fired power stations to dominate markets in Europe, the US with Australian iron ore and coal. Australia has a trillion dollars of debt. China imports 80% of its iron ore from Australia which has made it the world's biggest manufacturer dominating markets in Europe, the US and the rest of the world all on Australian iron ore. China can't buy it from anywhere else. With a 15% export license fee on iron ore exports we can pay off our debt. Do you want the Chinese to pay off our debt or you and your family. We can keep Medicare."
+  ],
+  "segment_summary": "Dutton advocates for nuclear energy to achieve net zero by 2050. Albanese said they were there for decades and had government and there was nothing. Then Katie provides a closing and supports them with future endeavors.",
+  "key_arguments": [
+    {
+      "argument": "Achieving net zero requires energy fast.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Electricity costs are cheap.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Coalition will pay from what China exports from",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Support renewable.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "We will have new debt.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Katie Allen",
+      "speaker_name": "Katie Allen"
+    },
+    {
+      "argument": "We will give every Australian a new deal",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Katie Allen",
+      "speaker_name": "Katie Allen"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "The is not really a discussion the team is providing their last bit.",
+    "key_devices_used": [
+      "Fear among",
+      "Statements",
+      "Emotion"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "It's always helpful that the team members and there is no one fighting among them but is making statements.",
+    "neutral": "Both parties made their points and tried to connect with their people.",
+    "progressive": "All is on the same side and the same message and their team members know it as well is how they are getting the topic across."
+  },
+  "connections_to_previous_segments": "Previous conversation",
+  "interaction_dynamics": "Everyone knows and all their points to help and close their deal.",
+  "notable_quotes": [
+    {
+      "quote": "Zero prosperity and zero future.",
+      "speaker": "Katie Allen"
+    }
+  ],
+  "topics_addressed": [
+    "International",
+    "Fuel bill",
+    "Tax"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Dutton",
+        "tone": "Support"
+      },
+      {
+        "speaker_name": "Albanese",
+        "tone": "Support"
+      },
+      {
+        "speaker_name": "Katie Allen",
+        "tone": "Support"
+      }
+    ],
+    "overall_tone": "Inform"
+  },
+  "thumbnail_timestamp": 1.0,
+  "segment_tiny_summary": "Support",
+  "segment_concise_summary": "The speaker, all wanted to help touch points with the people to be united with them."
+}

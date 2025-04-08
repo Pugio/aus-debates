@@ -1,0 +1,109 @@
+{
+  "speakers_present": [
+    "Dutton",
+    "Albanese",
+    "Moderator"
+  ],
+  "debate_segment_topic": "Energy",
+  "transcript": [
+    "Dutton: I can't achieve net zero by 2050 without cutting down on the approval times for small modular reactors and nuclear in those systems.",
+    "Dutton: We are paying three times the cost for electricity compared to Ontario where they have nuclear in the system in France, there is 70% nuclear in the system.",
+    "Dutton: Our policy is to make sure that we can underpin our economy with a stable energy market for the next 100 years.",
+    "Dutton: The amortization period or the life of the nuclear reactors lasts between 80 and 100 years and that cost is spread over that.",
+    "Dutton: If the renewables are so much cheaper as the Prime Minister keeps telling you, why has he broken his promise of a $275 a year cut to your electricity bill, when in actual fact it's gone up by $1300 under this government and families are struggling to pay their bills.",
+    "Dutton: The difference between the two policies is that our policy is 44% cheaper and in the interim, we increase the supply of gas into the market because",
+    "Albanese: well we support renewables backed by gas, backed by batteries, backed by hydro",
+    "Albanese: the former government were there for a decade and there were no nuclear"
+  ],
+  "segment_summary": "Dutton advocates for nuclear energy to achieve net zero by 2050, claiming lower electricity costs in countries with nuclear power. He criticizes Albanese for broken promises on electricity bills. Dutton states his policy is 44% cheaper and in the interim, Albanese supports renewables, backed by gas, batteries, and hydro. Albanese also stated, they were there for a decade and there was no nuclear.",
+  "key_arguments": [
+    {
+      "argument": "achieving net zero by 2050 requires nuclear power, which is achieved fast with small modular reactors",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Electricity costs are three times higher in Australia compared to countries with nuclear power.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Dutton's policy is to create a stable energy market for the next 100 years",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Albanese has broken his promise to cut electricity bills by $275.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Dutton's policy is 44% cheaper",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Nuclear was no government was there for decades.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Dutton uses statistics and direct attacks to criticize the Albanese government's performance and promote his party's energy policy. Albanese touches on why nuclear hasn't worked in the past.",
+    "key_devices_used": [
+      "Statistics",
+      "Direct address",
+      "Assertion"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "Dutton's focus on cost savings and criticizing Albanese's broken promises will resonate with voters concerned about the rising cost of living and unreliable energy sources. Highlighting international examples will further reinforce his policy effectiveness.",
+    "neutral": "Dutton makes several claims that could be true or not. Dutton presents a clear alternative energy policy and offers a tangible solution. Albanese touches on the points that has happened for decades.",
+    "progressive": "The numbers should be checked before just believing that a cheaper alternative is better. It's important to emphasize the current government's push for renewable energy."
+  },
+  "connections_to_previous_segments": "This transitions into a new topic, energy, and also the current fuel cost issue.",
+  "interaction_dynamics": "Dutton responds and rebuttals against Albanese as they both have their own policies to talk about. Albanese then touches on history.",
+  "notable_quotes": [
+    {
+      "quote": "If the renewables are so much cheaper as the Prime Minister keeps telling you, why has he broken his promise of a $275 a year cut to your electricity bill, when in actual fact it's gone up by $1300 under this government and families are struggling to pay their bills.",
+      "speaker": "Dutton"
+    },
+    {
+      "quote": "Our policy is to make sure that we can underpin our economy with a stable energy market for the next 100 years.",
+      "speaker": "Dutton"
+    },
+    {
+      "quote": "former government were there for a decade and there were no nuclear",
+      "speaker": "Albanese"
+    }
+  ],
+  "topics_addressed": [
+    "Energy policy",
+    "Nuclear energy",
+    "Renewable energy",
+    "Electricity costs",
+    "Fossil fuel"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Dutton",
+        "tone": "Assertive, critical"
+      },
+      {
+        "speaker_name": "Albanese",
+        "tone": "Reasoning"
+      }
+    ],
+    "overall_tone": "Argumentative"
+  },
+  "thumbnail_timestamp": 11.0,
+  "segment_tiny_summary": "Energy",
+  "segment_concise_summary": "Dutton then focuses on energy saying his opponent's promise has failed and Albanese then touches the past government not doing so."
+}

@@ -1,0 +1,87 @@
+{
+  "speakers_present": [
+    "Dutton",
+    "Albanese",
+    "Moderator"
+  ],
+  "debate_segment_topic": "Energy",
+  "transcript": [
+    "Dutton: I can't achieve net zero by 2050 without cutting down on the approval times for small modular reactors and nuclear in those systems.",
+    "Dutton: We are paying three times the cost for electricity compared to Ontario where they have nuclear in the system in France, there is 70% nuclear in the system.",
+    "Dutton: Our policy is to make sure that we can underpin our economy with a stable energy market for the next 100 years.",
+    "Dutton: The amortization period or the life of the nuclear reactors lasts between 80 and 100 years and that cost is spread over that.",
+    "Dutton: If the renewables are so much cheaper as the Prime Minister keeps telling you, why has he broken his promise of a $275 a year cut to your electricity bill, when in actual fact it's gone up by $1300 under this government and families are struggling to pay their bills.",
+    "Dutton: The difference between the two policies is that our policy is 44% cheaper and in the interim, we increase the supply of gas into the market because"
+  ],
+  "segment_summary": "Dutton states that nuclear energy is the answer. He claims that they are paying 3 times the cost of energy compared to countries that have nuclear systems like Ontario. He then asks the voters why is the current government has broken their promise and now they are paying $1300 more. Dutton then claims that their new policy is 44% cheaper.",
+  "key_arguments": [
+    {
+      "argument": "Net zero by 2050 can't be achieved without nuclear approval",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Australia is paying three times as much for electricity than Ontario and France.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Australia's policy would underpin our economy",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "His promise for tax cut broken",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "His new police is 44% cheaper",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Dutton focuses on attacking his opponents while stating his new policy as superior.",
+    "key_devices_used": [
+      "Repetition",
+      "Statistics",
+      "Direct address"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "Focusing on the other government issues while hyping his will make the voters side with him.",
+    "neutral": "Focusing on the stats while going against Albanese will make him sound more authentic.",
+    "progressive": "Focusing on cost, does touch up on the progressiveness."
+  },
+  "connections_to_previous_segments": "This touches on fuel.",
+  "interaction_dynamics": "This is Dutton discussing the points and there is no rebuttals.",
+  "notable_quotes": [
+    {
+      "quote": "If the renewables are so much cheaper as the Prime Minister keeps telling you, why has he broken his promise",
+      "speaker": "Dutton"
+    }
+  ],
+  "topics_addressed": [
+    "Energy",
+    "Election bill",
+    "Nuclear policy"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Dutton",
+        "tone": "Assertive"
+      }
+    ],
+    "overall_tone": "Assertive"
+  },
+  "thumbnail_timestamp": 11.0,
+  "segment_tiny_summary": "Energy",
+  "segment_concise_summary": "Dutton then focuses on energy saying his opponent's promise has failed."
+}

@@ -1,0 +1,71 @@
+{
+  "speakers_present": [
+    "Dutton",
+    "Albanese",
+    "Moderator"
+  ],
+  "debate_segment_topic": "People's Forum",
+  "transcript": [
+    "Dutton: If it's a choice",
+    "Albanese: Well well I think",
+    "Dutton: well can",
+    "Albanese: You know I want",
+    "Dutton: if it's a choice between a bit more pressure on interest rates or providing support for you that would be the wrong choice, I'd make the right choices"
+  ],
+  "segment_summary": "Dutton states what he would do if it's between a bit more pressure on interest rates or providing support for you, he would make the right choices",
+  "key_arguments": [
+    {
+      "argument": "What to to for a great right choice",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "By showing Dutton mentioning what he would focus on, the people will know.",
+    "key_devices_used": [
+      "Assertion",
+      "Direct address"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "By focusing on making the right choices that would appease to all the people.",
+    "neutral": "The point mentioned is helpful and Dutton could do more.",
+    "progressive": "The point works if the people agree with him."
+  },
+  "connections_to_previous_segments": "The conversation touches the discussions mentioned before in Gaza, immigration and cost.",
+  "interaction_dynamics": "The interaction is a discussion. The questions is passed from the Moderator from each person from Dutton to Albaneese.",
+  "notable_quotes": [
+    {
+      "quote": "If it's a choice between a bit more pressure on interest rates or providing support for you that would be the wrong choice, I'd make the right choices",
+      "speaker": "Dutton"
+    }
+  ],
+  "topics_addressed": [
+    "Fuel Cost",
+    "Tax Cut",
+    "Gaza",
+    "Global Trade",
+    "International Students"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Dutton",
+        "tone": "Informative"
+      },
+      {
+        "speaker_name": "Albanese",
+        "tone": "Informative"
+      },
+      {
+        "speaker_name": "Moderator",
+        "tone": "Engaging"
+      }
+    ],
+    "overall_tone": "Informative"
+  },
+  "thumbnail_timestamp": 1.0,
+  "segment_tiny_summary": "Dutton Points",
+  "segment_concise_summary": "Dutton points out certain statements to help reach all audiences that hear."
+}

@@ -1,0 +1,83 @@
+{
+  "speakers_present": [
+    "Dutton",
+    "Albanese",
+    "Moderator"
+  ],
+  "debate_segment_topic": "People's Forum",
+  "transcript": [
+    "Dutton: If it's a choice",
+    "Albanese: Well well I think",
+    "Dutton: well can",
+    "Albanese: You know I want",
+    "Dutton: if it's a choice between a bit more pressure on interest rates or providing support for you that would be the wrong choice, I'd make the right choices"
+  ],
+  "segment_summary": "Dutton states what he would do and to make the right choices when under pressure for interest rates and if it means providing support. Albanese responds to this issue at hand.",
+  "key_arguments": [
+    {
+      "argument": "well can",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "to know I want",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "a right choices",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Dutton focus is on how to be right and the right choices. Albanese to follow up.",
+    "key_devices_used": [
+      "Assertion",
+      "Direct address"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "By focusing on what he do shows the people.",
+    "neutral": "The points mentioned touch up on the previous discussions. Which can be interpreted as everyone being on the same page but it's difficult to actually provide something concrete without saying certain things.",
+    "progressive": "Emphasizing key points will work in everyone's favor. A point being mention will help out."
+  },
+  "connections_to_previous_segments": "The conversation touches the discussions mentioned before in Gaza, immigration and cost.",
+  "interaction_dynamics": "The interaction is a discussion, with certain people coming out sharing all their information. The questions is passed from the Moderator from each person from Dutton to Albaneese.",
+  "notable_quotes": [
+    {
+      "quote": "if it's a choice between a bit more pressure on interest rates or providing support for you that would be the wrong choice, I'd make the right choices",
+      "speaker": "Dutton"
+    }
+  ],
+  "topics_addressed": [
+    "Fuel Cost",
+    "Tax Cut",
+    "Gaza",
+    "Global Trade",
+    "International Students"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Dutton",
+        "tone": "Informative"
+      },
+      {
+        "speaker_name": "Albanese",
+        "tone": "Informative"
+      },
+      {
+        "speaker_name": "Moderator",
+        "tone": "Engaging"
+      }
+    ],
+    "overall_tone": "Informative"
+  },
+  "thumbnail_timestamp": 1.0,
+  "segment_tiny_summary": "Dutton Response",
+  "segment_concise_summary": "Dutton focuses on making the right choice for the people."
+}

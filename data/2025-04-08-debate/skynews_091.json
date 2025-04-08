@@ -1,0 +1,104 @@
+{
+  "speakers_present": [
+    "Dutton",
+    "Albanese",
+    "Moderator"
+  ],
+  "debate_segment_topic": "Economic management",
+  "transcript": [
+    "Dutton: I can't achieve net zero by 2050 without cutting down on the approval times for small modular reactors and nuclear in those systems.",
+    "Dutton: We are paying three times the cost for electricity compared to Ontario where they have nuclear in the system in France, there is 70% nuclear in the system.",
+    "Dutton: Our policy is to make sure that we can underpin our economy with a stable energy market for the next 100 years.",
+    "Dutton: The amortization period or the life of the nuclear reactors lasts between 80 and 100 years and that cost is spread over that.",
+    "Dutton: If the renewables are so much cheaper as the Prime Minister keeps telling you, why has he broken his promise of a $275 a year cut to your electricity bill, when in actual fact it's gone up by $1300 under this government and families are struggling to pay their bills.",
+    "Dutton: The difference between the two policies is that our policy is 44% cheaper and in the interim, we increase the supply of gas into the market because",
+    "Albanese: well we support renewables backed by gas, backed by batteries, backed by hydro",
+    "Albanese: the former government were there for a decade and there were no nuclear"
+  ],
+  "segment_summary": "Dutton promotes nuclear energy by claiming net zero by 2050 requires small modular reactors and criticizes the Prime Minister for rising costs. In contrast, the Prime Minister, said renewables are backed by gas. He states the coalition government did not implement nuclear in their time of power.",
+  "key_arguments": [
+    {
+      "argument": "achieving net zero by 2050 requires nuclear power, which is achieved fast with small modular reactors",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Electricity costs are three times higher in Australia compared to countries with nuclear power.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Dutton's policy is to create a stable energy market for the next 100 years",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Albanese has broken his promise to cut electricity bills by $275.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Dutton's policy is 44% cheaper",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Nuclear was no government was there for decades.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Dutton is using fear among his followers while presenting numbers and statistics. The Prime Minister does not back down.",
+    "key_devices_used": [
+      "Direct quotes",
+      "Emotion",
+      "Number stats",
+      "Exhortatio"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "It's helpful to mention that there is a goal while using stats to back it up to make sure the numbers are all correct before just following",
+    "neutral": "Both have points, that the public can agree on and can find a way.",
+    "progressive": "The points that both leaders touch up on can only be true if there are numbers but numbers should be factual"
+  },
+  "connections_to_previous_segments": "The leaders have spoken about everything from top from cost to student's so those can be linked to any prior topics.",
+  "interaction_dynamics": "Each leader tries to ensure that their positions help touch all their points and is not interrupted.",
+  "notable_quotes": [
+    {
+      "quote": "If the renewables are so much cheaper as the Prime Minister keeps telling you, why has he broken his promise of a $275 a year cut to your electricity bill",
+      "speaker": "Dutton"
+    }
+  ],
+  "topics_addressed": [
+    "International",
+    "Cost",
+    "Fuel bill"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Dutton",
+        "tone": "Fear is getting more attention from his statements"
+      },
+      {
+        "speaker_name": "Albanese",
+        "tone": "Numbers and dates facts and points"
+      },
+      {
+        "speaker_name": "Moderator",
+        "tone": "Informative but not as concerned to dig deep."
+      }
+    ],
+    "overall_tone": "Fearful"
+  },
+  "thumbnail_timestamp": 12.0,
+  "segment_tiny_summary": "Fear Energy",
+  "segment_concise_summary": "The speaker, said that we should support more and the next one has shown reason it's better to help the younger generation."
+}

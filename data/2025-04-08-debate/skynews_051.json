@@ -1,0 +1,119 @@
+{
+  "speakers_present": [
+    "Hibba",
+    "Dutton",
+    "Albanese",
+    "Moderator"
+  ],
+  "debate_segment_topic": "People's Forum",
+  "transcript": [
+    "Hibba: I'm extremely worried and concerned about the funding of weaponry aiding the onslaught on the innocent people of Gaza. What are you doing to stop this Prime Minister and Opposition leader what will you do about this if you are elected?",
+    "Moderator: Prime Minister first you.",
+    "Albanese: Well, thank you very much for the question and I certainly understand that for many Australians of particularly those with families or relatives either in Israel or in Gaza or indeed in Lebanon this has been a very traumatic period.",
+    "Albanese: My government's approach is that every innocent life matters and we want to see a ceasefire. We want to see hostages released. We want to see aid get through to Gaza. I must say though there are no Australian weaponry involved in what is going on in Gaza. that is just not the case. Uh we have made sure as well that Australia has taken I think a responsible position of continuing to call for not just the short-term issues in terms of",
+    "Albanese: a ceasefire aid to people in Gaza the release of hostages, but also our principled stance of a two-state solution. I want to see both Israelis and Palestinians live in peace and security side by side.",
+    "Moderator: Prime Minister, thank you. Mr. Dutton.",
+    "Dutton: Well, like the Prime Minister and I'm sure like every Australian, I want to see peace in the Middle East as well. But what we saw when Hamas took hostages and took people into a tunnel network that was an action which if it had happened to Australians there would have been an expectation of our government to react to send in the SAS to make sure that we recovered those people as quickly as possible. And I want to make sure that in our country people can celebrate their heritage can celebrate their connections to a country of origin or to a country which is important to them. But when you come to our country, it's about celebrating being Australian. "
+  ],
+  "segment_summary": "Hibba expresses worry about weaponry funding in Gaza. Albanese advocates for ceasefire, hostage release, and a two-state solution. Dutton also desires peace but uses it as a justification that if Australia had been in Israel's same position, Dutton would've defended Australia with force.",
+  "key_arguments": [
+    {
+      "argument": "Funding weaponry for the assault on Gaza is concerning.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "People's Forum",
+      "speaker_name": "Hibba"
+    },
+    {
+      "argument": "Every innocent life matters.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "The government wants to see a ceasefire, hostages released, and aid to Gaza.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "No Australian weaponry is involved in Gaza.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "A two-state solution is the principled stance.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "Dutton wants to have peace in the middle east.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Australia would react with full force.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Hibba conveys concern. Albanese offers government actions and a diplomatic solution. Dutton uses an emotional connection to Australia for a reason for force.",
+    "key_devices_used": [
+      "Emotion",
+      "Diplomacy",
+      "Assertion"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "Albanese's diplomatic stance should resonate and then Dutton connects it by saying that Australia would use all force necessary to protect its own people.",
+    "neutral": "Albanese attempts a balanced approach, advocating diplomacy and humanitarian aid. Dutton reinforces this with his support.",
+    "progressive": "Hibba's passion on the topic with Australia funding weaponry connects a lot more to progressives."
+  },
+  "connections_to_previous_segments": "This segment marks a shift to foreign policy, specifically the Israeli-Palestinian conflict, prompted by the voter question.",
+  "interaction_dynamics": "The interaction starts with a direct emotional appeal from a voter. Albanese responds with government policy. The Moderator then asks for Dutton.",
+  "notable_quotes": [
+    {
+      "quote": "What are you doing to stop this Prime Minister and Opposition leader what will you do about this if you are elected?",
+      "speaker": "Hibba"
+    },
+    {
+      "quote": "That there is no Australian weaponry involved in what is going on in Gaza. that is just not the case.",
+      "speaker": "Albanese"
+    },
+    {
+      "quote": "it's about celebrating being Australian.",
+      "speaker": "Dutton"
+    }
+  ],
+  "topics_addressed": [
+    "Israeli-Palestinian conflict",
+    "Foreign policy",
+    "Diplomacy",
+    "Humanitarian aid",
+    "Australian identity"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Hibba",
+        "tone": "Worried, concerned"
+      },
+      {
+        "speaker_name": "Albanese",
+        "tone": "Neutral, diplomatic"
+      },
+      {
+        "speaker_name": "Dutton",
+        "tone": "Nationalistic, assertive"
+      }
+    ],
+    "overall_tone": "Serious, concerned"
+  },
+  "thumbnail_timestamp": 7.0,
+  "segment_tiny_summary": "Gaza conflict",
+  "segment_concise_summary": "A voter raises concerns about the Gaza conflict, leading to Albanese and Dutton's opinions on the situation and how Australia would handle it."
+}

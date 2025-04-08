@@ -1,0 +1,64 @@
+{
+  "speakers_present": [
+    "Albanese",
+    "Dutton",
+    "Moderator"
+  ],
+  "debate_segment_topic": "Cost of Living, Tax Cuts",
+  "transcript": [
+    "Albanese: Thanks very much. Uh, to put really clearly, uh, there were tax cuts legislated under the former government. They went primarily. I would have got $9,000, so would Peter. Instead, we got four and a half, and we gave it to everyone. By lowering that bottom marginal tax rate. Now what we've done is we'll lower it by a cent, and then a further cent, uh, over the next, uh, over the next term of government. Because we wanted to make sure that every Australian got a tax cut, and the way that you make sure that low and middle income earners benefit is to target that first marginal tax rate that kicks in, of course at $18,200 and goes up to $45,000.",
+    "Moderator: Let's wrap up if we can. We're going to get them final statements in a moment, just a couple of quick answers if I can"
+  ],
+  "segment_summary": "Albanese responds to a question on cost of living and tax cuts. He explains that his government lowered the bottom marginal tax rate to ensure every Australian got a tax cut, benefiting low and middle-income earners. The Moderator then announces it is time for closing statements.",
+  "key_arguments": [
+    {
+      "argument": "The government's tax cuts benefit all Australians by lowering the bottom marginal tax rate.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "High income earners would have gotten $9000 in the prior government's scheme.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Albanese explains the tax cuts and frames them as benefitting all of Australia as opposed to high income earners as the prior government did. ",
+    "key_devices_used": [
+      "Direct address",
+      "Comparison",
+      "Simplification"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "Albanese is trying to defend the current government's plan by arguing a previous scheme helped high income earners. There is the risk that high income earners are negatively impacted by this change.",
+    "neutral": "Albanese explains the intent behind providing a tax cut to all Australians and not the higher earners. It would be helpful to know if low income earners benefit more from this tax policy.",
+    "progressive": "Giving money to everyone seems like a fair idea and there is a good point to make sure people feel supported. High income earners are going to be alright regardless."
+  },
+  "connections_to_previous_segments": "This builds on to all of the previous conversations with housing and costs.",
+  "interaction_dynamics": "Albanese responds to the audience question. ",
+  "notable_quotes": [
+    {
+      "quote": "The way that you make sure that low and middle income earners benefit is to target that first marginal tax rate",
+      "speaker": "Albanese"
+    }
+  ],
+  "topics_addressed": [
+    "Tax cuts",
+    "Cost of living"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Albanese",
+        "tone": "Informative"
+      }
+    ],
+    "overall_tone": "Informative"
+  },
+  "thumbnail_timestamp": 20.0,
+  "segment_tiny_summary": "Tax Cuts Explained",
+  "segment_concise_summary": "Albanese defends the Labor tax cuts, stating that it's to benefit people."
+}

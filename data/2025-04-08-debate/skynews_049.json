@@ -1,0 +1,132 @@
+{
+  "speakers_present": [
+    "Dutton",
+    "Albanese",
+    "Moderator"
+  ],
+  "debate_segment_topic": "People's Forum",
+  "transcript": [
+    "Albanese: things that are permanent.",
+    "Albanese: So, our tax cuts will be permanent. Free TAFE will be permanent. Taking 20% off student debt will be permanent. The reduction reducing of medicines down to $25, the same cost that they were in 2004 will be a long-term difference. And we've frozen the cost for pensioners to just $7.70 for the rest of the decade.",
+    "Albanese: So we understand cost-of-living pressures. That's why we've introduced as well energy rebates. All of these measures we've done, cheaper childcare. But all of them have been opposed by the Coalition. We have put in place what we can to make a positive difference. We know that there's more to do and that's why we want to do it.",
+    "Moderator: Mr. Dutton, I'll ask you the same question but the other way around. You announced the reduction in the fuel excise. Why not do the tax cuts as well? That's what people expect of Liberal Party leaders, isn't it?",
+    "Dutton: Well, Kieran a couple of points. Firstly, I think that was a very confronting scene if I might say from where we're standing, you see the number of hands raised then of people who are working hard people who've done everything they can in their own budgets to cut back on expenses and just to try and make things balanced at the end of each week, at the end of each fortnight or month and as I said in my opening remarks I think it's reflective of the broader population in Australia at the moment and it's certainly similar to many of the conversations we've had as we've moved around the country.",
+    "Dutton: People in tears, are people who've taken their kids out of school. People who've stopped a doctor's appointment because they can't afford, to pay to go to see the doctor under this government. bulk billing rates have come down dramatically under this government. So I I think we should be doing everything we can to provide support but we need to do it in a way that is not inflationary because with 12 interest rate rises the worst thing that we can have is a big labor Greens spending government after the election because that will be, that will be upward pressure again on interest rates which will be a disaster for families particularly with big mortgages.",
+    "Moderator: Let's hear from our next voter, this is Hibba."
+  ],
+  "segment_summary": "Continuing from the previous segment, Albanese discusses permanent tax cuts, free TAFE, and reduced medicine costs, claiming the Coalition opposes these measures. The Moderator challenges Dutton about why the Coalition didn't implement tax cuts. Dutton then accuses the government's economic management has led to tears and people unable to afford doctors. The most important argument for Dutton is that there is an upward pressure again on interest rates which will be a disaster for families. Then the Moderator moves onto the next speaker.",
+  "key_arguments": [
+    {
+      "argument": "Tax cuts will be permanent.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "Free TAFE will be permanent.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "Taking 20% off student debt will be permanent.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "Medicine costs have been reduced to $25.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "Cost of living measures introduced by the government have been opposed by the Coalition.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "People are unable to afford doctors under this government.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Labor-Green spending will put upward pressure on interest rates",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Albanese lists policy achievements and accuses the Coalition of opposition. The moderator prompts Dutton to defend the Coalition's record. Dutton asserts the government is spending too much.",
+    "key_devices_used": [
+      "Repetition",
+      "Contrast",
+      "Direct address",
+      "Appeal to emotion"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "Albanese's claims of Coalition opposition must be challenged. Dutton's focus on overspending and potential interest rate hikes will resonate with voters. By showing how bad the government is affecting citizens it will cause them to vote conservative.",
+    "neutral": "Albanese is focusing on achievements and attacking the opposition. Dutton attempts to undermine confidence in the government, pointing to tears and inability to afford doctors.",
+    "progressive": "Albanese's claims of permanent change give the impression that the Labor government is doing things for the long term benefit of the public."
+  },
+  "connections_to_previous_segments": "This segment builds on the previous discussion of housing affordability and international students and cost of living by highlighting a list of permanent achievements.",
+  "interaction_dynamics": "Albanese presents his party's position. The moderator directly challenges Dutton. Dutton then blames the current government, then the Moderator moves onto the next voter.",
+  "notable_quotes": [
+    {
+      "quote": "Our tax cuts will be permanent. Free TAFE will be permanent. Taking 20% off student debt will be permanent.",
+      "speaker": "Albanese"
+    },
+    {
+      "quote": "All of them have been opposed by the Coalition.",
+      "speaker": "Albanese"
+    },
+    {
+      "quote": "People in tears.",
+      "speaker": "Dutton"
+    },
+    {
+      "quote": "Government just hasn't been building the housing",
+      "speaker": "Dutton"
+    },
+    {
+      "quote": "There's a 42 international students coming into our country for every one student accomodation unit that's been approved.",
+      "speaker": "Dutton"
+    }
+  ],
+  "topics_addressed": [
+    "Tax cuts",
+    "TAFE",
+    "Student debt",
+    "Medicine costs",
+    "Cost of living",
+    "Fuel excise",
+    "Housing",
+    "Global relations",
+    "International students",
+    "Labor"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Albanese",
+        "tone": "Assertive, confident"
+      },
+      {
+        "speaker_name": "Moderator",
+        "tone": "Questioning, challenging"
+      },
+      {
+        "speaker_name": "Dutton",
+        "tone": "Concerned, critical"
+      }
+    ],
+    "overall_tone": "Contrasting, critical"
+  },
+  "thumbnail_timestamp": 1.0,
+  "segment_tiny_summary": "Dutton Economic view",
+  "segment_concise_summary": "Albanese touts cost-of-living policies and challenges the Coalition. Dutton then argues against it and the Moderator then states to move on to the next voter."
+}

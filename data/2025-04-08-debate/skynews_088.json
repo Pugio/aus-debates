@@ -1,0 +1,75 @@
+{
+  "speakers_present": [
+    "Albanese",
+    "Dutton",
+    "Moderator"
+  ],
+  "debate_segment_topic": "Cost of Living, Tax Cuts",
+  "transcript": [
+    "Moderator: Let's wrap up if we can. We're going to get them final statements in a moment, just a couple of quick answers if I can.",
+    "Dutton: Well, Kieran, a couple of points. Firstly, I think that was a very confronting scene, if I might say, from where we're standing. You see the number of hands raised then of people who are working hard, people who've done everything they can in their own budgets to cut back on expenses and just to try and make things balanced at the end of each week, at the end of each fortnight or month and, as I said in my opening remarks, I think it's reflective of the broader population in Australia at the moment and it's certainly similar to many of the conversations we've had as we've moved around the country.",
+    "Dutton: People in tears are people who've taken their kids out of school. People who've stopped a doctor's appointment because they can't afford to pay to go to see the doctor under this government. Bulk billing rates have come down dramatically under this government. So, I, I think we should be doing everything we can to provide support, but we need to do it in a way that is not inflationary, because with 12 interest rate rises the worst thing that we can have is a big Labor Green spending government after the election because that will be, that will be upward pressure again on interest rates, which will be a disaster for families particularly with big mortgages.",
+    "Moderator: Let's hear from our next voter, this is Hibba."
+  ],
+  "segment_summary": "The moderator begins the wrapping up part of the session, followed by Dutton responding to previous discussions, emphasizing the struggles of ordinary Australians and criticizing Labor's economic policies for potentially fueling inflation and rising interest rates. The session is then moving onto the next person.",
+  "key_arguments": [
+    {
+      "argument": "People are struggling with cost of living, taking kids out of school, and forgoing medical appointments.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Labor-Green spending will lead to upward pressure on interest rates, harming families with mortgages.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Dutton uses emotive language and stark examples of hardship. He is trying to scare the listeners.",
+    "key_devices_used": [
+      "Appeal to emotion",
+      "Fear mongering",
+      "Causal reasoning"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "This framing will play well with voters worried about their finances and the economic direction of the country. It effectively paints Labor as economically irresponsible and dangerous.",
+    "neutral": "Dutton's statement serves to emphasize existing economic anxieties among the audience and to sow doubt about Labor's economic policies.",
+    "progressive": "Dutton's fear mongering could mislead the audience and should be fact checked. The claims needs to be more data driven."
+  },
+  "connections_to_previous_segments": "This segment wraps up conversations from previous statements related to housing.",
+  "interaction_dynamics": "The Moderator then says to let's hear from the next voter as Dutton gives his answer. No counter-argument.",
+  "notable_quotes": [
+    {
+      "quote": "People in tears are people who've taken their kids out of school.",
+      "speaker": "Dutton"
+    },
+    {
+      "quote": "That will be upward pressure again on interest rates which will be a disaster for families particularly with big mortgages.",
+      "speaker": "Dutton"
+    }
+  ],
+  "topics_addressed": [
+    "Cost of living",
+    "Interest rates",
+    "Economic management"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Dutton",
+        "tone": "Concerned, alarming"
+      },
+      {
+        "speaker_name": "Moderator",
+        "tone": "Direct"
+      }
+    ],
+    "overall_tone": "Worried, stressful."
+  },
+  "thumbnail_timestamp": 12.0,
+  "segment_tiny_summary": "Worrying Future",
+  "segment_concise_summary": "Dutton responds with talking points about economics for the future of the country."
+}

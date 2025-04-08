@@ -1,0 +1,138 @@
+{
+  "speakers_present": [
+    "Albanese",
+    "Dutton",
+    "Moderator",
+    "Woman"
+  ],
+  "debate_segment_topic": "People's Forum",
+  "transcript": [
+    "Woman: Um, I work for the Department of Education and I've seen that there's quite a big difference between public versus private. I was wondering if we're getting any sort of funding towards public education in the near future.",
+    "Moderator: Might go uh Mr. Dutton, kick that one off.",
+    "Dutton: Well, I think it's an incredibly important question and it's important because parents have a choice to make and whether that's for the public system or for the private system, we have supported both and we support increased funding going into this election as well and there's a position which is identical between the two parties in relation to funding for public schools and for private schools as well. Uh I think it is important that parents are able to have that choice and that we can fund the infrastructure and that we can support teacher development and make sure that we've got an education system which is fit for purpose. We live in an incredibly competitive environment and we need to make sure that the outcomes in our schools are meeting the standards and expectations.",
+    "Albanese: Well, thanks very much Monica for your question and I admire anyone who is a public school teacher. Uh you do incredible work. And one of the things we've had to deal with is the last time government changed in Australia in 2013, in the 2014 budget 30 billion dollars was ripped out of public schools in that budget. 50 billion dollars was ripped out of hospitals. And we've had to deal with that for a long time. You'd be aware way back now, more than a decade ago, there was the Gonski reforms which were about giving, put simply, every child to get free, a fair funding. So that if they fall behind, they can get that assistance. Now we've delivered that in a deal negotiated with every single state and territory in the country. 14.6 billion of",
+    "Albanese: additional dollars so that every student whether they are going to a public school or a private school can get the funding that they deserve and that includes the deal so that they get proper proper support so that if a child falls behind at the moment NAPLAN is a bit too late we want to do testing in year one so if a child falls behind they can get that specialist one on one tutoring or small group to make sure that they don't fall behind because if you address that really early then every child can have the opportunity to fulfill their aspirations.",
+    "Moderator: Kieran I just wanted to follow up on that real quickly.",
+    "Dutton: Yeah sure",
+    "Moderator: The fact is, that there were no cuts.",
+    "Moderator: The Prime Minister goes out with this medicare campaign and education scare campaign, it is not a truthful statement. Now what the Prime Minister is saying is that the funding didn't go up by as much as he would want each year, but there was no year where funding was cut from hospitals or..."
+  ],
+  "segment_summary": "A woman asks about public education funding. Dutton responds that both parties support increased funding for both public and private schools. Albanese then thanks the woman, stating in the 2014 budget 30 billion was removed from public schools and the Gonski reforms were about fair funding. The fact is, that there were no cuts. Dutton counters that the Prime Minister uses scare tactics.",
+  "key_arguments": [
+    {
+      "argument": "Increased funding for public education is needed.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "People's Forum",
+      "speaker_name": "Woman"
+    },
+    {
+      "argument": "Both parties support increased funding for both public and private schools.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Parents should have a choice between public and private education.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "In the 2014 budget, $30 billion was removed from public schools.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "The fact is, there were no cuts.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "The Prime Minister uses scare tactics.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "We've delivered the Gonski reforms in a deal negotiated with every state and territory.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "If a child falls behind at the moment NAPLAN is a bit too late",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Dutton speaks in a measured and reassuring tone. Albanese states funding cuts from the past government. Dutton then counters. The question from the audience immediately identifies a policy area of key importance.",
+    "key_devices_used": [
+      "Appeal to shared values",
+      "Emphasis on choice",
+      "Statistics",
+      "Direct attack",
+      "Assertion"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "Dutton's answer will reassure voters that the Coalition supports both public and private education, acknowledging parental choice. By stating that the Prime Minister is using scare tactics will be effective.",
+    "neutral": "The response is a commitment to supporting both public and private education. Dutton avoids making specific promises, instead highlighting the need for infrastructure and teacher development. The emphasis on competitiveness indicates a focus on educational outcomes that prepare students for the workforce.",
+    "progressive": "Albanese's points on previous budget cuts reinforces this. Emphasizing that it could be better might not sit well with voters."
+  },
+  "connections_to_previous_segments": "This segment transitions to a new topic, education funding, prompted by a question from a member of the audience.",
+  "interaction_dynamics": "The interaction begins with a direct question from a member of the public. Dutton provides a prepared response, then it's passed off to Albanese. Dutton then counters.",
+  "notable_quotes": [
+    {
+      "quote": "Parents have a choice to make and whether that's for the public system or for the private system.",
+      "speaker": "Dutton"
+    },
+    {
+      "quote": "We've got an education system which is fit for purpose.",
+      "speaker": "Dutton"
+    },
+    {
+      "quote": "in the 2014 budget 30 billion dollars was ripped out of public schools in that budget.",
+      "speaker": "Albanese"
+    },
+    {
+      "quote": "Gonski reforms which were about giving, put simply, every child to get free, a fair funding.",
+      "speaker": "Albanese"
+    },
+    {
+      "quote": "That there were no cuts.",
+      "speaker": "Dutton"
+    }
+  ],
+  "topics_addressed": [
+    "Education funding",
+    "Public education",
+    "Private education",
+    "Parental choice",
+    "Budget cuts",
+    "Gonski reforms"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Woman",
+        "tone": "Inquisitive, concerned"
+      },
+      {
+        "speaker_name": "Dutton",
+        "tone": "Reassuring, informative"
+      },
+      {
+        "speaker_name": "Albanese",
+        "tone": "Serious"
+      }
+    ],
+    "overall_tone": "Informative, concerned"
+  },
+  "thumbnail_timestamp": 33.0,
+  "segment_tiny_summary": "Education Funding",
+  "segment_concise_summary": "A woman asks about public education funding. Albanese cites past budget cuts while Dutton counters. The Moderator states that there were no cuts."
+}

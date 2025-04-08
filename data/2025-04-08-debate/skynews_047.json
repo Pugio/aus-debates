@@ -1,0 +1,97 @@
+{
+  "speakers_present": [
+    "Dutton",
+    "Albanese",
+    "Moderator"
+  ],
+  "debate_segment_topic": "People's Forum",
+  "transcript": [
+    "Albanese: things that are permanent.",
+    "Albanese: So, our tax cuts will be permanent. Free TAFE will be permanent. Taking 20% off student debt will be permanent. The reduction reducing of medicines down to $25, the same cost that they were in 2004 will be a long-term difference. And we've frozen the cost for pensioners to just $7.70 for the rest of the decade.",
+    "Albanese: So we understand cost-of-living pressures. That's why we've introduced as well energy rebates. All of these measures we've done, cheaper childcare. But all of them have been opposed by the Coalition. We have put in place what we can to make a positive difference. We know that there's more to do and that's why we want to do it.",
+    "Moderator: Mr. Dutton, I'll ask you the same question but the other way around. You announced the reduction in the fuel excise. Why not do the tax cuts as well? That's what people expect of Liberal Party leaders, isn't it?",
+    "Dutton: Well, Kieran a couple of points. Firstly"
+  ],
+  "segment_summary": "Albanese discusses permanent tax cuts, free TAFE, and reducing student debt and medicine costs. He also says cost of living measures introduced by his government have been opposed by the Coalition. The Moderator asks Dutton why the Coalition didn't introduce tax cuts too.",
+  "key_arguments": [
+    {
+      "argument": "Tax cuts will be permanent.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "Free TAFE will be permanent.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "Taking 20% off student debt will be permanent.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "Medicine costs have been reduced to $25.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "Cost of living measures introduced by the government have been opposed by the Coalition.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Albanese lists policy achievements, emphasizing their permanency. He positions the Coalition as opposing these popular measures. The moderator prompts Dutton to defend the Coalition's record.",
+    "key_devices_used": [
+      "Repetition",
+      "Contrast",
+      "Direct address"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "Albanese's claims about the Coalition opposing cost of living measures needs to be challenged by Dutton. Emphasis on permanent policies is a strong selling point that Dutton needs to rebut.",
+    "neutral": "Albanese is focusing on the cost of living achievements and attacking the opposition as opposing these efforts. He paints a picture of a government that's actively working to help Australians.",
+    "progressive": "Albanese's claims of permanent change give the image that the Labor government is doing things for the long term benefit of the public."
+  },
+  "connections_to_previous_segments": "This segment builds on the previous discussion of housing affordability and international students by returning to cost-of-living issues.",
+  "interaction_dynamics": "Albanese presents his party's position. The moderator then directly challenges Dutton to defend the Coalition's lack of tax cuts.",
+  "notable_quotes": [
+    {
+      "quote": "Our tax cuts will be permanent. Free TAFE will be permanent. Taking 20% off student debt will be permanent.",
+      "speaker": "Albanese"
+    },
+    {
+      "quote": "All of them have been opposed by the Coalition.",
+      "speaker": "Albanese"
+    }
+  ],
+  "topics_addressed": [
+    "Tax cuts",
+    "TAFE",
+    "Student debt",
+    "Medicine costs",
+    "Cost of living",
+    "Fuel excise"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Albanese",
+        "tone": "Assertive, confident"
+      },
+      {
+        "speaker_name": "Moderator",
+        "tone": "Questioning, challenging"
+      }
+    ],
+    "overall_tone": "Assertive, critical"
+  },
+  "thumbnail_timestamp": 15.0,
+  "segment_tiny_summary": "Albanese on Cost of Living",
+  "segment_concise_summary": "Albanese touts permanent tax cuts and accuses the Coalition of opposing cost of living measures. The Moderator challenges Dutton on why tax cuts weren't introduced."
+}

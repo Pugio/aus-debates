@@ -1,0 +1,182 @@
+{
+  "speakers_present": [
+    "Dutton",
+    "Albanese",
+    "Moderator",
+    "Ian"
+  ],
+  "debate_segment_topic": "People's Forum",
+  "transcript": [
+    "Albanese: things that are permanent.",
+    "Albanese: So, our tax cuts will be permanent. Free TAFE will be permanent. Taking 20% off student debt will be permanent. The reduction reducing of medicines down to $25, the same cost that they were in 2004 will be a long-term difference. And we've frozen the cost for pensioners to just $7.70 for the rest of the decade.",
+    "Albanese: So we understand cost-of-living pressures. That's why we've introduced as well energy rebates. All of these measures we've done, cheaper childcare. But all of them have been opposed by the Coalition. We have put in place what we can to make a positive difference. We know that there's more to do and that's why we want to do it.",
+    "Moderator: Mr. Dutton, I'll ask you the same question but the other way around. You announced the reduction in the fuel excise. Why not do the tax cuts as well? That's what people expect of Liberal Party leaders, isn't it?",
+    "Dutton: Well, Kieran a couple of points. Firstly, I think that was a very confronting scene if I might say from where we're standing, you see the number of hands raised then of people who are working hard people who've done everything they can in their own budgets to cut back on expenses and just to try and make things balanced at the end of each week, at the end of each fortnight or month and as I said in my opening remarks I think it's reflective of the broader population in Australia at the moment and it's certainly similar to many of the conversations we've had as we've moved around the country.",
+    "Dutton: People in tears, are people who've taken their kids out of school. People who've stopped a doctor's appointment because they can't afford, to pay to go to see the doctor under this government. bulk billing rates have come down dramatically under this government. So I I think we should be doing everything we can to provide support but we need to do it in a way that is not inflationary because with 12 interest rate rises the worst thing that we can have is a big labor Greens spending government after the election because that will be, that will be upward pressure again on interest rates which will be a disaster for families particularly with big mortgages.",
+    "Moderator: Let's hear from our next voter, this is Hibba.",
+    "Hibba: I'm extremely worried and concerned about the funding of weaponry aiding the onslaught on the innocent people of Gaza. What are you doing to stop this Prime Minister and Opposition leader what will you do about this if you are elected?",
+    "Moderator: Prime Minister first you.",
+    "Albanese: Well, thank you very much for the question and I certainly understand that for many Australians of particularly those with families or relatives either in Israel or in Gaza or indeed in Lebanon this has been a very traumatic period.",
+    "Albanese: My government's approach is that every innocent life matters and we want to see a ceasefire. We want to see hostages released. We want to see aid get through to Gaza. I must say though there are no Australian weaponry involved in what is going on in Gaza. that is just not the case. Uh we have made sure as well that Australia has taken I think a responsible position of continuing to call for not just the short-term issues in terms of",
+    "Albanese: a ceasefire aid to people in Gaza the release of hostages, but also our principled stance of a two-state solution. I want to see both Israelis and Palestinians live in peace and security side by side.",
+    "Moderator: Prime Minister, thank you. Mr. Dutton.",
+    "Dutton: Well, like the Prime Minister and I'm sure like every Australian, I want to see peace in the Middle East as well. But what we saw when Hamas took hostages and took people into a tunnel network that was an action which if it had happened to Australians there would have been an expectation of our government to react to send in the SAS to make sure that we recovered those people as quickly as possible. And I want to make sure that in our country people can celebrate their heritage can celebrate their connections to a country of origin or to a country which is important to them. But when you come to our country, it's about celebrating being Australian. ",
+    "Moderator: Let's hear from our next voter, this is Ian.",
+    "Ian: Good day Anthony. Um my question, I'm an owner driver from Kings Langley up near Blacktown. It's about the fuel excise. Um, I'm hoping that you can match that from Peter because I know you've offered tax cuts and that's great, but I believe they're not for 15 months, and to be honest, Mr. Prime Minister, people are hurting now. Not in 15 months time. So you know, the fuel is dialed into everything. Not only personally people's cars, but for me and other truck drivers, it makes the supply chain cheaper and cheaper and cheaper if fuel's less. And I'll say to Peter",
+    "Ian: To be honest it it would help more people than are there are in that room, as a as a total tax cut"
+  ],
+  "segment_summary": "Dutton speaks on the economic issues. Albanese emphasizes the permanent issues. Then the debate transitions to Gaza conflict as Hibba poses questions and the discussion then focuses on the cost of fuel. The next person gives his feedback.",
+  "key_arguments": [
+    {
+      "argument": "Tax cuts will be permanent.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "Free TAFE will be permanent.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "Taking 20% off student debt will be permanent.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "Medicine costs have been reduced to $25.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "Cost of living measures introduced by the government have been opposed by the Coalition.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "People are unable to afford doctors under this government.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Labor-Green spending will put upward pressure on interest rates",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Every innocent life matters",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "We want to see a ceasefire",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "There is no Australian weaponry involved in Gaza",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "Fuel is dialed into everything",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "People's Forum",
+      "speaker_name": "Ian"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Dutton asserts that the government isn't doing enough. Albanese supports all points mentioned above.",
+    "key_devices_used": [
+      "Statistics",
+      "Assertion"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "Albanese mentions how it has his points and Dutton reinforces with all the points. A great way to have progressive vote for his points.",
+    "neutral": "The points are well received by everyone involved. Having them to build off the information is great.",
+    "progressive": "Emphasizing it is important for the Australian economy to be involved also appeals to the voter base."
+  },
+  "connections_to_previous_segments": "This builds upon the housing crisis and then goes directly into international students.",
+  "interaction_dynamics": "The interaction is a discussion between two people. The Moderator then passes off the question to Dutton for feedback, then Albanese.   ",
+  "notable_quotes": [
+    {
+      "quote": "Our way of life is sharing our way of life with the rest of the world.",
+      "speaker": "Jason"
+    },
+    {
+      "quote": "Not allowing those students to come to Australia, it actually hurts our brand worldwide.",
+      "speaker": "Jason"
+    },
+    {
+      "quote": "We've been made better because of our migration story.",
+      "speaker": "Dutton"
+    },
+    {
+      "quote": "We are much stronger when we work with our friends.",
+      "speaker": "Albanese"
+    },
+    {
+      "quote": "We need to continue to argue the case for a world based on the rule of law.",
+      "speaker": "Albanese"
+    },
+    {
+      "quote": "My government's approach is that every innocent life matters",
+      "speaker": "Albanese"
+    },
+    {
+      "quote": "There is no Australian weaponry involved in Gaza",
+      "speaker": "Albanese"
+    },
+    {
+      "quote": "it's about celebrating being Australian.",
+      "speaker": "Dutton"
+    }
+  ],
+  "topics_addressed": [
+    "Housing",
+    "Global relations",
+    "International students"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Dutton",
+        "tone": "Informative"
+      },
+      {
+        "speaker_name": "Jason",
+        "tone": "Informative, direct"
+      },
+      {
+        "speaker_name": "Moderator",
+        "tone": "Enthusiastic"
+      },
+      {
+        "speaker_name": "Albanese",
+        "tone": "Informative"
+      },
+      {
+        "speaker_name": "Ian",
+        "tone": "Direct"
+      },
+      {
+        "speaker_name": "Hibba",
+        "tone": "Concerned"
+      }
+    ],
+    "overall_tone": "Informative"
+  },
+  "thumbnail_timestamp": 1.0,
+  "segment_tiny_summary": "Gaza issue",
+  "segment_concise_summary": "Albanese focuses cost-of-living policy and challenges the Coalition to match that.The points from both speakers help touch economic issues and world peace."
+}

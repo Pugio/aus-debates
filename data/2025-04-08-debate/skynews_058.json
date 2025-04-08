@@ -1,0 +1,107 @@
+{
+  "speakers_present": [
+    "Dutton",
+    "Albanese",
+    "Moderator",
+    "Ian"
+  ],
+  "debate_segment_topic": "People's Forum",
+  "transcript": [
+    "Dutton: If it's a choice",
+    "Albanese: Well well I think",
+    "Dutton: well can",
+    "Albanese: You know I want",
+    "Dutton: if it's a choice between a bit more pressure on interest rates or providing support for you that would be the wrong choice, I'd make the right choices",
+    "Ian: Can can can you see yourself matching that from Peter if he said fuel excise as his response?",
+    "Albanese: We think and I've got you the numbers but we think that you'll be better off under our plan and we'll make sure that people get that support including through our budget to improve services, to strengthen Medicare, to provide for the national disability insurance scheme.",
+    "Albanese: These things that are permanent, and those services of quality are what makes a difference not just for today but into the future and it is about those things you make permanent."
+  ],
+  "segment_summary": "Dutton states what he would make the right choice if it's between pressure and support for everyone. Albanese responds with how people would be better off under their plan.",
+  "key_arguments": [
+    {
+      "argument": "Well can",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "You the numbers",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "A right choices",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "We think that you'll be better off under our plan and we'll make sure that people get that support including through our budget to improve services",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "We think that what makes a difference not just for today but into the future and it is about those things you make permanent",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Dutton focuses on what is going to do to protect the numbers for the people. Albanese focuses on why it's better to make things permanent.",
+    "key_devices_used": [
+      "Assertion",
+      "Direct address"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "By being in control of the facts can help swing voters back in his direction.Stating the government should show how it will be in the future, is a strong point.",
+    "neutral": "The points are well received by everyone involved. Having Dutton and Albanese be in alignment to do their best will be helpful to make the people feel better.",
+    "progressive": "Emphasizing key points will work in everyone's favor. A point being mention will help out."
+  },
+  "connections_to_previous_segments": "The conversation touches the discussions mentioned before in Gaza, immigration and cost.",
+  "interaction_dynamics": "The interaction is a discussion with certain people coming out sharing all their information. The questions is passed from the Moderator from each person from Dutton to Albanese.",
+  "notable_quotes": [
+    {
+      "quote": "Can can can you see yourself matching that from Peter if he said fuel excise as his response?",
+      "speaker": "Ian"
+    },
+    {
+      "quote": "We think and I've got you the numbers but we think that you'll be better off under our plan and we'll make sure that people get that support including through our budget to improve services, to strengthen Medicare, to provide for the national disability insurance scheme.",
+      "speaker": "Albanese"
+    }
+  ],
+  "topics_addressed": [
+    "Fuel Cost",
+    "Tax Cut",
+    "Gaza",
+    "Global Trade",
+    "International Students"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Dutton",
+        "tone": "Informative"
+      },
+      {
+        "speaker_name": "Albanese",
+        "tone": "Informative"
+      },
+      {
+        "speaker_name": "Moderator",
+        "tone": "Engaging"
+      },
+      {
+        "speaker_name": "Ian",
+        "tone": "Exasperated"
+      }
+    ],
+    "overall_tone": "Stressed and informative"
+  },
+  "thumbnail_timestamp": 5.0,
+  "segment_tiny_summary": "Albo Response",
+  "segment_concise_summary": "Albanese then responds how it's more to be better off under the plan."
+}

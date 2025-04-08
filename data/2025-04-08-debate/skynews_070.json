@@ -1,0 +1,88 @@
+{
+  "speakers_present": [
+    "Albanese",
+    "Dutton"
+  ],
+  "debate_segment_topic": "Medicare",
+  "transcript": [
+    "Albanese: That's why my government has had to fight the 8 and a half billion dollars you've matched to be fair, you have said you agree with our policy there, but we're repairing what we inherited which was bulk billing in freefall while the coalition was in government.",
+    "Dutton: Well again, that is factually incorrect. So I was Health Minister in 2013-2014, the bulk billing rate in our country was 84%. It went to 88% by the time we finished government and the Prime Minister rightfully will point out that that includes services over Covid. Uh but it was heading up under us.",
+    "Dutton: The fact is that it is now down to 77%..",
+    "Albanese: Did you try to introduce a charge to get rid of bulk billing?",
+    "Dutton: I'm happy to come to that.. So it's now at 77%.",
+    "Dutton: The Prime Minister wants you to believe that it's much higher and that it's in freefall, it's not. It wasn't in freefall under our government and what has happened since the Prime Minister's been in power over the last three years, it has come back. Now doctors that we put into-"
+  ],
+  "segment_summary": "Albanese accuses the Coalition of allowing bulk billing to fall into freefall. Dutton responds that the bulk billing rate was actually 84% when he was Health Minister and increased to 88% by the time they finished government. Dutton then stated that is now down to 77% under Albanese's government. ",
+  "key_arguments": [
+    {
+      "argument": "Bulk billing was in freefall while the Coalition was in government.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "The bulk billing rate was 84% when Dutton was Health Minister and rose to 88% by the end of the Coalition government.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Did you try to introduce a charge to get rid of bulk billing.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "The bulk billing rate is now down to 77%.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Albanese accuses the former government while Dutton responds with statistics to show success when he was in power. Dutton wants to focus on the numbers.",
+    "key_devices_used": [
+      "Statistics",
+      "Direct attack",
+      "Counter-argument"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "Dutton focuses on that while in his role, things went better to show the audience. Albanese points out the issues but that could hurt his claim.",
+    "neutral": "The response clearly is to prove the points that the Prime Minister is speaking against him. The response has many claims that could be fact checked and can't know which is true or not.",
+    "progressive": "Albanese should attack back against all points Dutton is mentioning so that his audience can agree with his views and statements."
+  },
+  "connections_to_previous_segments": "This transitions from the previous segments into the discussion on medical issues.",
+  "interaction_dynamics": "The tone turns more aggressive between the two speakers with the numbers. The rebuttals are quick and to the points.",
+  "notable_quotes": [
+    {
+      "quote": "what we inherited which was bulk billing in freefall while the coalition was in government.",
+      "speaker": "Albanese"
+    },
+    {
+      "quote": "That is factually incorrect.",
+      "speaker": "Dutton"
+    }
+  ],
+  "topics_addressed": [
+    "Medicare",
+    "Bulk billing",
+    "Healthcare funding"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Albanese",
+        "tone": "Accusatory"
+      },
+      {
+        "speaker_name": "Dutton",
+        "tone": "Defensive, assertive"
+      }
+    ],
+    "overall_tone": "Argumentative"
+  },
+  "thumbnail_timestamp": 38.0,
+  "segment_tiny_summary": "Bulk Billing",
+  "segment_concise_summary": "Albanese accuses the Coalition of allowing bulk billing to fall while in power. Dutton refutes it, citing higher bulk billing numbers when he was Health Minister."
+}

@@ -1,0 +1,98 @@
+{
+  "speakers_present": [
+    "Prit",
+    "Albanese",
+    "Dutton",
+    "Moderator"
+  ],
+  "debate_segment_topic": "People's Forum",
+  "transcript": [
+    "Prit: every time being extra gap free. So I want to ask both of you, what's your plan, do you want to increase Medicare funding so we won't have to pay extra gap fee or is there any way where we can stop doctors to charge us extra.",
+    "Albanese: Well thanks very much Prit for that that question and this is one of my government's priorities.",
+    "Albanese: And what we did in last year's budget was we triple the bulk billing incentive for doctors the amount that they pay for concession card holders, for pensioners and others that go along. That resulted in a 90% rate of bulk billing.",
+    "Albanese: Now we have another 8 and a half billion dollars to triple the incentive for everyone, all 27 million Australians because we want those bulk billing rates to go up to 90%. On top of that we have Medicare urgent care clinics. There's one just down the road here in Wentworthville that I've been to with",
+    "Albanese: Andrew Charlton the local member. They have seen 1.3 million Australians that one third of them are under the age of 15. And people can get the care that they need when they need it.",
+    "Albanese: That has made enormous difference",
+    "Albanese: All you need is your Medicare card. We can put the bulk billing rate back up",
+    "Moderator: Thanks, Mr. Dutton.",
+    "Dutton: with the doctor that you talk about that gap free to you you just need",
+    "Albanese: not a credit card because Labor creates Medicare"
+  ],
+  "segment_summary": "Prit asks about Medicare funding and stopping extra gap fees. Albanese responds that it's a government priority, stating they've tripled the bulk billing incentive resulting in 90% bulk billing. He emphasizes they'll do it again for everyone and stated they have set up Medicare urgent care clinics. All one needs is the Medicare card.",
+  "key_arguments": [
+    {
+      "argument": "Increase Medicare funding and stop extra gap fees.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "People's Forum",
+      "speaker_name": "Prit"
+    },
+    {
+      "argument": "Tripled bulk billing incentive for concession card holders.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "Medicare urgent care clinics are available for non-life-threatening situations.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "only needs your Medicare card not your credit card",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Albanese has good focus on his statements to build trust with the people. There are interruptions.",
+    "key_devices_used": [
+      "Emotion",
+      "Fact",
+      "Assertion"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "By showing how the government can lower the fees for people that don't have credit, it can help them.",
+    "neutral": "Albanese states facts and then he mentions all his points. ",
+    "progressive": "The amount of funding and no credit card is a good point to focus on."
+  },
+  "connections_to_previous_segments": "This touches previous conversations such as all the cost of those people in Australia",
+  "interaction_dynamics": "The audience speaks to the Prime Minister and touches on those facts to reassure the public.",
+  "notable_quotes": [
+    {
+      "quote": "That one of my government's priorities",
+      "speaker": "Albanese"
+    },
+    {
+      "quote": "every time being extra gap free.",
+      "speaker": "Prit"
+    },
+    {
+      "quote": "We can put the bulk billing rate back up.",
+      "speaker": "Albanese"
+    }
+  ],
+  "topics_addressed": [
+    "Medicare",
+    "Funding",
+    "Healthcare"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Albanese",
+        "tone": "Helpful"
+      },
+      {
+        "speaker_name": "Prit",
+        "tone": "Concerned"
+      }
+    ],
+    "overall_tone": "Concerned and helpful"
+  },
+  "thumbnail_timestamp": 25.0,
+  "segment_tiny_summary": "Medicine Extra",
+  "segment_concise_summary": "Albanoese then answers the questions that Pritz has on the issues of medical gap."
+}

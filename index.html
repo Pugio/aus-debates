@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Australian Federal Debate Analysis</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Base styles and reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f8f9fa;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      /* Header styles */
+      header {
+        background-color: #4a6fa5; /* Softer blue for Australian theme */
+        color: white;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header h1 {
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 1.8rem;
+      }
+
+      .search-container {
+        display: flex;
+        width: 100%;
+        max-width: 500px;
+      }
+
+      #search-input {
+        flex-grow: 1;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 4px 0 0 4px;
+        font-size: 1rem;
+      }
+
+      #search-button {
+        background-color: #d56062;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+      }
+
+      /* Timeline styles */
+      .timeline-container {
+        background-color: #fff;
+        padding: 1rem 0;
+        border-bottom: 1px solid #e6e8eb;
+        position: sticky;
+        top: 80px;
+        z-index: 90;
+      }
+
+      .timeline {
+        height: 30px;
+        background-color: #eef2f7;
+        border-radius: 15px;
+        position: relative;
+        overflow: hidden;
+        margin: 0 15px;
+      }
+
+      .timeline-marker {
+        position: absolute;
+        width: 10px;
+        height: 30px;
+        background-color: #4a6fa5;
+        cursor: pointer;
+        transition: background-color 0.1s;
+      }
+
+      .timeline-marker:hover {
+        background-color: #d56062;
+      }
+
+      .timeline-marker.active {
+        background-color: #d56062;
+      }
+
+      .timeline-tooltips {
+        position: absolute;
+        bottom: 35px;
+        left: 0;
+        background-color: #333;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        display: none;
+      }
+
+      .timeline-marker:hover .timeline-tooltips {
+        display: block;
+      }
+
+      /* Segment styles */
+      .segment {
+        background-color: white;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+      }
+
+      .segment-header {
+        padding: 0.6rem 1rem;
+        border-bottom: 1px solid #e6e8eb;
+        display: flex;
+        color: #333;
+        background-color: #f4f7fa;
+        cursor: pointer;
+      }
+
+      .segment-header::after {
+        content: "\f107";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        margin-left: auto;
+        transition: transform 0.3s;
+      }
+
+      .segment-header.expanded::after {
+        transform: rotate(180deg);
+      }
+
+      .segment-title {
+        font-size: 1rem;
+      }
+
+      .segment-timestamp {
+        font-size: 0.9rem;
+        color: #666;
+        min-width: 81px;
+      }
+
+      @media (max-width: 600px) {
+        .segment-header {
+          flex-direction: column;
+          align-items: flex-start; /* Align items to the left */
+          gap: 0.4rem; /* Optional spacing between timestamp and title */
+        }
+
+        .segment-timestamp {
+          min-width: auto; /* Removes fixed width on small screens */
+        }
+      }
+
+      .segment-content {
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+      }
+
+      .segment-content.expanded {
+        max-height: 5000px; /* Arbitrary large value */
+        padding: 1rem;
+      }
+
+      .segment-details {
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.1s ease, padding 0.1s ease;
+      }
+
+      .segment-details.expanded {
+        padding: 1rem 0;
+        max-height: 5000px; /* Arbitrary large value */
+        padding-top: 0px;
+      }
+
+      .segment-details.expanded .section-title:first-child {
+        margin-top: 0px;
+      }
+
+      .segment-summary {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+      }
+
+      .featured-quote {
+        padding: 0.8rem;
+        background-color: #f8f9fa;
+        border-left: 4px solid #4a6fa5;
+        margin-bottom: 1rem;
+        font-style: italic;
+        position: relative;
+      }
+
+      .section-title {
+        font-size: 1.2rem;
+        margin: 1.5rem 0 0.5rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 2px solid #4a6fa5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .expand-section {
+        cursor: pointer;
+        color: #4a6fa5;
+      }
+
+      /* Key arguments styles */
+      .key-arguments {
+        margin-bottom: 1rem;
+      }
+
+      .argument {
+        background-color: #f4f7fa;
+        padding: 1rem;
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+      }
+
+      .argument-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+      }
+
+      .speaker-name {
+        font-weight: bold;
+      }
+
+      .party-affiliation {
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      /* Perspective commentary styles */
+      .perspective-commentary {
+        margin-bottom: 1rem;
+      }
+
+      .perspective {
+        padding: 1rem;
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+      }
+
+      .perspective-title {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      .progressive {
+        background-color: rgba(74, 144, 226, 0.08);
+        border-left: 4px solid #4a90e2;
+      }
+
+      .conservative {
+        background-color: rgba(213, 96, 98, 0.08);
+        border-left: 4px solid #d56062;
+      }
+
+      .neutral {
+        background-color: rgba(128, 128, 128, 0.08);
+        border-left: 4px solid #a0a0a0;
+      }
+
+      /* Notable quotes styles */
+      .notable-quotes {
+        margin-bottom: 1rem;
+      }
+
+      .quote {
+        padding: 0.8rem;
+        background-color: #f4f7fa;
+        border-left: 4px solid #4a6fa5;
+        margin-bottom: 0.5rem;
+        font-style: italic;
+        position: relative;
+      }
+
+      .quote-share {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        background: transparent;
+        border: none;
+        color: #00008b;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      /* Topics styles */
+      .topics {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.2rem; /*0.5rem;*/
+        line-height: 1rem;
+      }
+
+      .topic {
+        /* background-color: #4a6fa5; */
+        background-color: #e8f2ff;
+        /* color: white; */
+        padding: 0.1rem; /*0.3rem 0.8rem;*/
+        /* border-radius: 20px; */
+        font-size: 0.9rem;
+        /* cursor: pointer; */
+        text-decoration: underline;
+      }
+
+      /* Sentiment analysis styles */
+      .sentiment-analysis {
+        margin-bottom: 1rem;
+      }
+
+      .sentiment-meter {
+        height: 10px;
+        background-color: #eef2f7;
+        border-radius: 5px;
+        margin-top: 0.5rem;
+        overflow: hidden;
+      }
+
+      .sentiment-value {
+        height: 100%;
+        background: linear-gradient(to right, red, yellow, green);
+      }
+
+      /* Transcript styles */
+      .transcript {
+        margin-bottom: 1rem;
+      }
+
+      .transcript-line {
+        margin-bottom: 1rem;
+      }
+
+      .speaker {
+        font-weight: bold;
+        color: #4a6fa5;
+      }
+
+      /* Modal styles */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1000;
+      }
+
+      .modal-content {
+        background-color: white;
+        margin: 15% auto;
+        padding: 2rem;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 600px;
+        position: relative;
+      }
+
+      .close-button {
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      .share-text {
+        background-color: #f9f9f9;
+        padding: 1rem;
+        border-radius: 4px;
+        margin: 1rem 0;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+
+      .share-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .share-button {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: white;
+      }
+
+      .twitter {
+        background-color: #1da1f2;
+      }
+
+      .facebook {
+        background-color: #4267b2;
+      }
+
+      .linkedin {
+        background-color: #0e76a8;
+      }
+
+      .copy {
+        background-color: #4a6fa5;
+      }
+
+      /* Footer styles */
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      /* Responsive styles */
+      @media (min-width: 768px) {
+        header .container {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        header h1 {
+          margin-bottom: 0;
+          text-align: left;
+        }
+
+        .search-container {
+          max-width: 300px;
+        }
+      }
+
+      /* Toggle buttons for expandable sections */
+      .toggle-button {
+        background: transparent;
+        border: none;
+        color: #00008b;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      .toggle-icon {
+        transition: transform 0.1s;
+      }
+
+      .toggle-icon.expanded {
+        transform: rotate(180deg);
+      }
+
+      /* Share icon styles */
+      .share-icon {
+        color: #4a6fa5;
+        cursor: pointer;
+        margin-left: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      /* Highlighting for search results */
+      .highlight {
+        background-color: rgba(213, 96, 98, 0.2);
+        padding: 0 2px;
+      }
+
+      .loading-indicator {
+        text-align: center;
+        padding: 2rem;
+        font-size: 1.2rem;
+        color: #666;
+      }
+
+      .section-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.1s ease;
+      }
+
+      .section-content.expanded {
+        max-height: 2000px;
+      }
+
+      #floating-share-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #4a6fa5;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        z-index: 50;
+      }
+
+      .filter-controls-container {
+        background-color: #fff;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #e6e8eb;
+        margin-bottom: 1rem;
+      }
+
+      .commentary-filters {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .commentary-filters h3 {
+        font-size: 1rem;
+        margin: 0;
+        color: #333;
+      }
+
+      .filter-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .filter-option {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .filter-label {
+        margin-left: 0.5rem;
+        padding: 0.25rem 0.6rem;
+        border-radius: 4px;
+        font-size: 0.9rem;
+      }
+
+      .progressive-label {
+        color: #4a90e2;
+        background-color: rgba(74, 144, 226, 0.08);
+      }
+
+      .conservative-label {
+        color: #d56062;
+        background-color: rgba(213, 96, 98, 0.08);
+      }
+
+      .neutral-label {
+        color: #808080;
+        background-color: rgba(128, 128, 128, 0.08);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Australian Federal Debate Live Analysis</h1>
+        <!-- <div class="search-container">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search topics, speakers, quotes..."
+          />
+          <button id="search-button"><i class="fas fa-search"></i></button>
+        </div> -->
+      </div>
+    </header>
+    <!-- 
+    <div class="timeline-container">
+      <div class="timeline" id="debate-timeline"> -->
+    <!-- Timeline markers will be added dynamically -->
+    <!-- </div>
+    </div> -->
+
+    <main class="container">
+      <div id="loading-indicator" class="loading-indicator">
+        <i class="fas fa-spinner fa-spin"></i> Loading debate segments...
+      </div>
+      <!-- Commentary Filter Controls -->
+      <div class="filter-controls-container">
+        <div class="container">
+          <div class="commentary-filters">
+            <h3>Select Commentary:</h3>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" id="toggle-progressive" checked />
+                <span class="filter-label progressive-label">Progressive</span>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" id="toggle-conservative" checked />
+                <span class="filter-label conservative-label"
+                  >Conservative</span
+                >
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" id="toggle-neutral" checked />
+                <span class="filter-label neutral-label">Neutral</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="segments-container">
+        <!-- Segments will be added dynamically -->
+      </div>
+    </main>
+
+    <div id="share-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h3>Share this content</h3>
+        <div class="share-text" id="share-text"></div>
+        <div class="share-options">
+          <button class="share-button twitter">
+            <i class="fab fa-twitter"></i> Twitter
+          </button>
+          <button class="share-button facebook">
+            <i class="fab fa-facebook"></i> Facebook
+          </button>
+          <button class="share-button linkedin">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </button>
+          <button class="share-button copy">
+            <i class="fas fa-link"></i> Copy Link
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="floating-share-btn">
+      <i class="fas fa-share-alt"></i>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>
+          I put this together while watching the debate. Want to chat about AI?
+          <a href="mailto:pugiox@gmail.com" style="color: #1da1f2">email me</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      async function fetchData() {
+        const API_BASE = "/data/2025-04-08-debate/skynews_";
+        const SKYNEWS_START = 29;
+        // debugger;
+        // check if data is cached locally
+        const cachedData = localStorage.getItem("debateData");
+        let lastCachedNumber = localStorage.getItem("lastCachedNumber");
+        if (lastCachedNumber) {
+          lastCachedNumber = parseInt(lastCachedNumber);
+        } else {
+          lastCachedNumber = SKYNEWS_START;
+        }
+
+        lastCachedNumber++;
+
+        let initialData = [];
+        if (cachedData) initialData = JSON.parse(cachedData);
+
+        // keep fetching incremented numbers until we get a 404
+        let currentNumber = lastCachedNumber;
+        let dataFetched = false;
+        while (!dataFetched) {
+          const paddedNumber = String(currentNumber).padStart(3, "0");
+          try {
+            const response = await fetch(`${API_BASE}${paddedNumber}.json`);
+            if (response.ok) {
+              const data = await response.json();
+              data["segment_number"] = paddedNumber;
+              initialData.push(data);
+              localStorage.setItem("lastCachedNumber", currentNumber);
+              localStorage.setItem("debateData", JSON.stringify(initialData));
+              currentNumber++;
+            } else if (response.status === 404) {
+              dataFetched = true;
+            }
+          } catch (error) {
+            console.error("Error fetching data:", error);
+            break;
+          }
+        }
+
+        // Cache the data locally
+        return initialData;
+      }
+
+      document.addEventListener("DOMContentLoaded", async function () {
+        // Sample data - in a real app, this would be fetched from an API
+
+        const debateData = await fetchData();
+        // [
+        //   {
+        //     speakers_present: [
+        //       "Sarah Abo",
+        //       "Scott Morrison",
+        //       "Anthony Albanese",
+        //       "Chris Uhlmann",
+        //     ],
+        //     debate_segment_topic: "Introduction to the debate",
+        //     transcript: [
+        //       "Sarah Abo: Good evening and welcome to the Great Debate. I'm Sarah Abo.",
+        //       "Sarah Abo: Well Australia is about to decide who will lead us for the next three years.",
+        //       "Sarah Abo: But right now, a lot of Australians are still undecided about who that should be.",
+        //       "Sarah Abo: So tonight, the leaders of the two major parties are facing off in what is the last head-to-head contest before polls open tomorrow morning and early voting begins.",
+        //       "Sarah Abo: We'd like to welcome the Prime Minister Scott Morrison, and Opposition Leader Anthony Albanese.",
+        //       "Sarah Abo: Tonight, they'll be taking questions from our expert panel representing Australia's largest media organization, Nine's political editor, Chris Uhlmann.",
+        //     ],
+        //     segment_summary:
+        //       "Sarah Abo introduces the Great Debate, highlighting that many Australians are still undecided about who should lead the country for the next three years. She welcomes Prime Minister Scott Morrison and Opposition Leader Anthony Albanese, announcing that they will be taking questions from an expert panel.",
+        //     key_arguments: [],
+        //     rhetorical_analysis: {
+        //       communication_style_notes:
+        //         "Sarah Abo adopts a formal and welcoming tone. Her delivery is clear and concise, setting the stage for the debate.",
+        //       key_devices_used: ["Introduction", "Setting the stage"],
+        //     },
+        //     perspective_commentary: {
+        //       conservative:
+        //         "The moderator's introduction fairly sets up the stakes of the debate and accurately portrays the undecided nature of the electorate. The mention of early voting is a subtle but important reminder of the extended election period.",
+        //       neutral:
+        //         "The introduction provides context for the debate, emphasizing the importance of the leaders' final opportunity to sway undecided voters. It clearly states the format of the debate and introduces the participants.",
+        //       progressive:
+        //         "The introduction emphasizes the large number of undecided voters, suggesting an opportunity for Albanese to differentiate himself from Morrison and appeal to progressive values.",
+        //     },
+        //     connections_to_previous_segments:
+        //       "This is the first segment, so there are no direct connections to previous segments.",
+        //     interaction_dynamics:
+        //       "The segment is solely an introduction by the moderator, setting the stage and introducing the debaters. No interaction between Albanese and Morrison occurs.",
+        //     notable_quotes: [
+        //       {
+        //         quote:
+        //           "Well Australia is about to decide who will lead us for the next three years.",
+        //         speaker: "Sarah Abo",
+        //       },
+        //       {
+        //         quote:
+        //           "But right now, a lot of Australians are still undecided about who that should be.",
+        //         speaker: "Sarah Abo",
+        //       },
+        //     ],
+        //     topics_addressed: [
+        //       "Australian Federal Election",
+        //       "Leadership",
+        //       "Debate Format",
+        //     ],
+        //     sentiment_analysis: {
+        //       individual_speaker_tones: [
+        //         { speaker_name: "Sarah Abo", tone: "Neutral, Informative" },
+        //       ],
+        //       overall_tone: "Neutral, Introductory",
+        //     },
+        //     thumbnail_timestamp: 40.0,
+        //     segment_tiny_summary: "Debate Introduction",
+        //     segment_concise_summary:
+        //       "Sarah Abo introduces the debate, highlighting the large number of undecided voters and welcoming the leaders of the major parties and the panel of experts.",
+        //   },
+        //   {
+        //     speakers_present: ["Sarah Abo", "Deb Knight", "David Crowe"],
+        //     debate_segment_topic: "Introduction to the debate",
+        //     transcript: [
+        //       "Sarah Abo: Nine Radio's Deb Knight representing 3AW, 2GB, 4BC, and 6PR.",
+        //       "Sarah Abo: And from Nine's newspapers, Chief Political Correspondent for The Age and Sydney Morning Herald David Crowe.",
+        //       "Sarah Abo: We are broadcasting across the country this evening, including in key marginal electorates.",
+        //       "Sarah Abo: On Nine Television and Nine Now, through the websites of Australia's leading newspapers, and simulcast across our radio network.",
+        //       "Sarah Abo: This debate is, of course, all about you at home.",
+        //       "Sarah Abo: Your issues, your concerns, and who has the best plan to make your lives better.",
+        //       "Sarah Abo: So tonight, you'll score this debate, you'll decide who's won.",
+        //       "Sarah Abo: In the corner of your screen is a QR code.",
+        //       "Sarah Abo: Use your phone to scan that code anytime during the debate, and you'll be invited to vote anonymously.",
+        //       "Sarah Abo: Or you can head to 9news.com.au.",
+        //       "Sarah Abo: There is one question waiting for you there right now, more will be added throughout the evening, and we'll reveal your viewer verdict once the",
+        //     ],
+        //     segment_summary:
+        //       "Sarah Abo introduces the panel of journalists from Nine Radio and Nine's newspapers. She outlines that the debate is about the viewers' issues and concerns, and that viewers can score the debate and vote anonymously via a QR code or the 9news website.",
+        //     key_arguments: [],
+        //     rhetorical_analysis: {
+        //       communication_style_notes:
+        //         "Sarah Abo continues with a clear, direct, and informative tone. She emphasizes viewer participation and control over scoring the debate.",
+        //       key_devices_used: ["Direct address", "Emphasis on viewer agency"],
+        //     },
+        //     perspective_commentary: {
+        //       conservative:
+        //         "The focus on voter issues and the opportunity to score the debate directly aligns with a conservative emphasis on individual responsibility and direct participation in the political process. The availability of online voting may favour a tech-savvy demographic.",
+        //       neutral:
+        //         "This segment clearly articulates the debate's purpose and format, highlighting viewer involvement through scoring and voting. The use of a QR code and website voting allows broad accessibility.",
+        //       progressive:
+        //         "The emphasis on 'your issues' and empowering viewers to 'score this debate' provides a sense of agency to the electorate and subtly positions the debate as a process that gives voice to the concerns of everyday Australians.",
+        //     },
+        //     connections_to_previous_segments:
+        //       "This segment follows directly from the initial introduction, building upon the context established in the previous segment.",
+        //     interaction_dynamics:
+        //       "The segment is a monologue by Sarah Abo, providing information and instructions to the viewers. There is no interaction between the debaters.",
+        //     notable_quotes: [
+        //       {
+        //         quote: "This debate is, of course, all about you at home.",
+        //         speaker: "Sarah Abo",
+        //       },
+        //       {
+        //         quote:
+        //           "So tonight, you'll score this debate, you'll decide who's won.",
+        //         speaker: "Sarah Abo",
+        //       },
+        //     ],
+        //     topics_addressed: [
+        //       "Debate Format",
+        //       "Viewer Participation",
+        //       "Voting Information",
+        //     ],
+        //     sentiment_analysis: {
+        //       individual_speaker_tones: [
+        //         { speaker_name: "Sarah Abo", tone: "Informative, Empowering" },
+        //       ],
+        //       overall_tone: "Informative, Engaging",
+        //     },
+        //     thumbnail_timestamp: 33.0,
+        //     segment_tiny_summary: "Viewer Verdict",
+        //     segment_concise_summary:
+        //       "Sarah Abo outlines how viewers can score the debate and vote anonymously, emphasizing that the debate is about their issues and concerns.",
+        //   },
+        //   {
+        //     speakers_present: ["Sarah Abo", "Scott Morrison"],
+        //     debate_segment_topic: "Opening Statements",
+        //     transcript: [
+        //       "Sarah Abo: debate is over. Well, we know Australians have a lot of questions. So, to make sure we get through as many of them as possible tonight, both leaders have agreed to keep their answers to 60 seconds, except for their opening statements, which will be 90 seconds. Our leaders have only blank paper and a pen with them to make notes throughout the evening. Well, it's time now to get started. The Prime Minister Scott Morrison won the coin toss earlier and will give the opening statement. Over to you, Mr. Morrison.",
+        //       "Scott Morrison: Well, thank you, Sarah. Happy Mother's Day. I'm incredibly optimistic about Australia's future. What Australia, what we've been able to achieved together over these last three years and particularly the last two, has been quite extraordinary as we've come through one of the biggest challenges our country has known since the Second World War. We faced down 15% unemployment and now we're at 4% unemployment. And we know that a strong economy is what can secure a stronger future. A strong economy is what can ensure we can improve the lives of Australians.",
+        //     ],
+        //     segment_summary:
+        //       "Sarah Abo introduces the debate rules, stating that opening statements will be 90 seconds. Scott Morrison delivers his opening statement, expressing optimism about Australia's future, highlighting achievements in the past three years, especially reducing unemployment, and emphasizing the importance of a strong economy for a secure future.",
+        //     key_arguments: [
+        //       {
+        //         argument:
+        //           "Australia has achieved extraordinary things in the last three years, particularly in the last two, despite facing one of the biggest challenges since WWII.",
+        //         claim_needs_fact_check: true,
+        //         party_affiliation: "Liberal-National Coalition",
+        //         speaker_name: "Scott Morrison",
+        //       },
+        //       {
+        //         argument:
+        //           "The government faced down 15% unemployment and is now at 4% unemployment.",
+        //         claim_needs_fact_check: true,
+        //         party_affiliation: "Liberal-National Coalition",
+        //         speaker_name: "Scott Morrison",
+        //       },
+        //       {
+        //         argument:
+        //           "A strong economy is essential to secure a stronger future and improve the lives of Australians.",
+        //         claim_needs_fact_check: false,
+        //         party_affiliation: "Liberal-National Coalition",
+        //         speaker_name: "Scott Morrison",
+        //       },
+        //     ],
+        //     rhetorical_analysis: {
+        //       communication_style_notes:
+        //         "Sarah Abo clearly lays out the rules. Morrison starts optimistically and highlights achievements under his leadership.",
+        //       key_devices_used: [
+        //         "Appeal to optimism",
+        //         "Use of statistics",
+        //         "Historical comparison",
+        //       ],
+        //     },
+        //     perspective_commentary: {
+        //       conservative:
+        //         "Morrison's opening is a strong appeal to the government's economic achievements. The focus on unemployment figures and facing challenges positions his government as competent managers. This is a clear attempt to reassure voters concerned about economic stability.",
+        //       neutral:
+        //         "The segment sets the stage for the debate. Morrison uses his opening statement to present an optimistic view of Australia's recent economic performance and underscore the necessity of a robust economy. The historical comparison provides context and emphasizes the significance of current challenges.",
+        //       progressive:
+        //         "Morrison's focus on unemployment numbers might be perceived as a deflection from other critical issues such as climate change or social inequality. The emphasis on the economy potentially marginalizes concerns about social justice and environmental sustainability.",
+        //     },
+        //     connections_to_previous_segments:
+        //       "This segment directly follows the previous segment, commencing the debate's substantive content after the procedural introductions.",
+        //     interaction_dynamics:
+        //       "The segment involves Sarah Abo providing context and introducing Morrison, followed by Morrison's uninterrupted opening statement.",
+        //     notable_quotes: [
+        //       {
+        //         quote: "I'm incredibly optimistic about Australia's future.",
+        //         speaker: "Scott Morrison",
+        //       },
+        //       {
+        //         quote: "A strong economy is what can secure a stronger future.",
+        //         speaker: "Scott Morrison",
+        //       },
+        //     ],
+        //     topics_addressed: [
+        //       "Debate Rules",
+        //       "Economic Performance",
+        //       "Unemployment",
+        //       "Australia's Future",
+        //     ],
+        //     sentiment_analysis: {
+        //       individual_speaker_tones: [
+        //         { speaker_name: "Sarah Abo", tone: "Neutral, Informative" },
+        //         {
+        //           speaker_name: "Scott Morrison",
+        //           tone: "Optimistic, Confident",
+        //         },
+        //       ],
+        //       overall_tone: "Optimistic, Introductory",
+        //     },
+        //     thumbnail_timestamp: 30.0,
+        //     segment_tiny_summary: "Morrison opening",
+        //     segment_concise_summary:
+        //       "Sarah Abo outlines debate rules; Morrison delivers an optimistic opening statement, focusing on economic achievements and the importance of a strong economy.",
+        //   },
+        //   {
+        //     speakers_present: ["Sarah Abo", "Scott Morrison"],
+        //     debate_segment_topic: "Opening Statements",
+        //     transcript: [
+        //       "Scott Morrison: And so this election is a choice about a stronger economy under the plan we've had in place and takes us into the future or a weaker one, about a stronger future or a more uncertain future.",
+        //       "Scott Morrison: Our plan delivers another 1.3 million jobs, 400,000 more small businesses, investments in the skills and infrastructure that Australians need to grow, lower taxes, and ensuring that we're investing in the the clean energy, the better roads that are needed right across the country.",
+        //       "Scott Morrison: And of course guaranteeing essential services that you rely on and defending our country with record investments in defense.",
+        //       "Scott Morrison: This is a choice. It's a choice between strength and weakness. It's a choice between certainty and uncertainty. What you know about the government and what you don't know about the Labor Party and the opposition who have had three years to tell you but haven't.",
+        //       "Scott Morrison: So today, tonight, it's all about a choice, a choice between who can best manage that economy for a stronger future, because a strong",
+        //     ],
+        //     segment_summary:
+        //       "Scott Morrison continues his opening statement by framing the election as a choice between a strong or weak economy and a certain or uncertain future. He claims the government's plan will deliver more jobs and small businesses, lower taxes, investments in clean energy and infrastructure, guaranteed essential services and increased defense spending. He contrasts his government's known performance with the perceived unknowns of the Labor Party.",
+        //     key_arguments: [
+        //       {
+        //         argument:
+        //           "This election is a choice between a strong or weak economy and a certain or uncertain future.",
+        //         claim_needs_fact_check: false,
+        //         party_affiliation: "Liberal-National Coalition",
+        //         speaker_name: "Scott Morrison",
+        //       },
+        //       {
+        //         argument:
+        //           "The government's plan will deliver 1.3 million jobs and 400,000 more small businesses.",
+        //         claim_needs_fact_check: true,
+        //         party_affiliation: "Liberal-National Coalition",
+        //         speaker_name: "Scott Morrison",
+        //       },
+        //       {
+        //         argument:
+        //           "The government is investing in clean energy, better roads, essential services, and defense.",
+        //         claim_needs_fact_check: true,
+        //         party_affiliation: "Liberal-National Coalition",
+        //         speaker_name: "Scott Morrison",
+        //       },
+        //       {
+        //         argument:
+        //           "Voting for the Liberal-National Coalition offers certainty, while voting for Labor means uncertainty.",
+        //         claim_needs_fact_check: false,
+        //         party_affiliation: "Liberal-National Coalition",
+        //         speaker_name: "Scott Morrison",
+        //       },
+        //     ],
+        //     rhetorical_analysis: {
+        //       communication_style_notes:
+        //         "Morrison uses assertive language and emphasizes the idea of 'choice.' He contrasts 'strength' with 'weakness' and 'certainty' with 'uncertainty' to create a clear dichotomy.",
+        //       key_devices_used: [
+        //         "Dichotomy",
+        //         "Repetition",
+        //         "Use of statistics",
+        //         "Fear appeal",
+        //       ],
+        //     },
+        //     perspective_commentary: {
+        //       conservative:
+        //         "Morrison effectively frames the election as a choice between a stable, known quantity (his government) and a risky unknown (Labor). The emphasis on economic management, job creation, and national security resonates with conservative values. The comparison to weakness and uncertainty seeks to instill doubt about the opposition's capabilities.",
+        //       neutral:
+        //         "Morrison's opening statement is a classic incumbent strategy: highlight accomplishments, promise more of the same, and cast doubt on the opposition. The framing of the election as a choice between certainty and uncertainty appeals to voters who prioritize stability and are wary of change. He is relying heavily on the idea that voters fear the unknown more than they dislike the status quo.",
+        //       progressive:
+        //         "Morrison's reliance on fear-mongering and unsubstantiated claims about economic outcomes could be perceived as disingenuous. The oversimplified dichotomy between 'strength' and 'weakness' ignores complex social and environmental issues. The claims regarding job creation and investment levels require careful scrutiny.",
+        //     },
+        //     connections_to_previous_segments:
+        //       "This segment continues Morrison's opening statement from the previous segment.",
+        //     interaction_dynamics:
+        //       "Morrison speaks uninterrupted, continuing his opening statement. Sarah Abo is not present in this segment",
+        //     notable_quotes: [
+        //       {
+        //         quote:
+        //           "This is a choice. It's a choice between strength and weakness. It's a choice between certainty and uncertainty.",
+        //         speaker: "Scott Morrison",
+        //       },
+        //       {
+        //         quote:
+        //           "What you know about the government and what you don't know about the Labor Party",
+        //         speaker: "Scott Morrison",
+        //       },
+        //     ],
+        //     topics_addressed: [
+        //       "Economic Management",
+        //       "Job Creation",
+        //       "Small Business",
+        //       "Infrastructure",
+        //       "Taxation",
+        //       "Clean Energy",
+        //       "National Security",
+        //       "Defense",
+        //     ],
+        //     sentiment_analysis: {
+        //       individual_speaker_tones: [
+        //         {
+        //           speaker_name: "Scott Morrison",
+        //           tone: "Assertive, Confident, Warning",
+        //         },
+        //       ],
+        //       overall_tone: "Persuasive, Contrasting",
+        //     },
+        //     thumbnail_timestamp: 40.0,
+        //     segment_tiny_summary: "Morrison Opening (cont)",
+        //     segment_concise_summary:
+        //       "Morrison frames the election as a choice between strength and weakness, certainty and uncertainty, highlighting his government's economic plan and casting doubt on Labor's capabilities.",
+        //   },
+        // ];
+
+        // Initialize the UI
+        initializeUI(debateData);
+
+        // Function to initialize the UI
+        function initializeUI(data) {
+          // Hide loading indicator
+          document.getElementById("loading-indicator").style.display = "none";
+
+          // Initialize segments
+          initializeSegments(data);
+
+          // Setup event listeners
+          setupShareModal();
+          setupFloatingShareButton();
+          setupSegmentHeaders();
+
+          // Check if there's a hash in the URL to open a specific segment
+          checkUrlHash();
+        }
+
+        // Function to initialize segments
+        function initializeSegments(data) {
+          const segmentsContainer =
+            document.getElementById("segments-container");
+
+          // Define debate start time (for demo purposes)
+          const debateStartTime = new Date();
+          debateStartTime.setHours(19, 30, 0); // 7:30 PM
+
+          data.forEach((segment, index) => {
+            // Create unique ID for this segment
+            const segmentId = `segment-${index}`;
+
+            // Create segment element
+            const segmentElement = document.createElement("div");
+            segmentElement.className = "segment";
+            segmentElement.id = segmentId;
+
+            // Calculate time based on segment index (incrementing by 1 minute for each segment)
+            let formattedTime;
+
+            // Create a new date object based on debate start time and add index minutes
+            const segmentTime = new Date(debateStartTime);
+            segmentTime.setMinutes(debateStartTime.getMinutes() + index);
+
+            // Format the time
+            formattedTime = segmentTime.toLocaleTimeString("en-US", {
+              hour: "numeric",
+              minute: "2-digit",
+              hour12: true,
+            });
+
+            // Create segment header with timestamp and concise summary
+            const segmentHeader = document.createElement("div");
+            segmentHeader.className = "segment-header";
+            segmentHeader.setAttribute("data-target", `${segmentId}-content`);
+            segmentHeader.innerHTML = `
+            <span class="segment-timestamp">${formattedTime}</span>
+            <span class="segment-title">${
+              segment.segment_concise_summary || "Debate Point"
+            }</span>
+          `;
+
+            // Create segment main content (hidden by default)
+            const segmentContent = document.createElement("div");
+            segmentContent.className = "segment-content";
+            segmentContent.id = `${segmentId}-content`;
+
+            // Create segment details (expandable)
+            const segmentDetails = document.createElement("div");
+            segmentDetails.className = "segment-details";
+            segmentDetails.id = `${segmentId}-details`;
+
+            // Build always-visible content
+            let mainContentHTML = `
+              <div class="segment-summary" id="${segmentId}-summary">
+                  ${segment.segment_summary}
+                  <i class="fas fa-share-alt share-icon" data-content="${segment.segment_summary}" data-id="${segmentId}-summary"></i>
+              </div>
+          `;
+
+            // Add featured quote (first notable quote) if available
+            if (segment.notable_quotes && segment.notable_quotes.length > 0) {
+              // Check if quotes have speaker property
+              let featuredQuote;
+              let speaker = "";
+
+              if (typeof segment.notable_quotes[0] === "object") {
+                featuredQuote = segment.notable_quotes[0].quote;
+                speaker = segment.notable_quotes[0].speaker
+                  ? `— ${segment.notable_quotes[0].speaker}`
+                  : "";
+              } else {
+                featuredQuote = segment.notable_quotes[0];
+              }
+
+              mainContentHTML += `
+                  <div class="featured-quote" id="${segmentId}-featured-quote">
+                      "${featuredQuote}" <span class="quote-speaker">${speaker}</span>
+                      <i class="fas fa-share-alt share-icon" data-content="${featuredQuote}" data-id="${segmentId}-featured-quote"></i>
+                  </div>
+              `;
+            }
+
+            // Add topics to always-visible content
+            mainContentHTML += `
+              <div class="topics" id="${segmentId}-topics">
+                  ${renderTopics(segment.topics_addressed, segmentId)}
+              </div>
+
+              <div class="" id="${segmentId}-perspectives">
+                  ${renderPerspectives(
+                    segment.perspective_commentary,
+                    segmentId
+                  )}
+              </div>
+
+
+              <div class="expand-section" onclick="toggleDetails('${segmentId}-details')">
+                  <i class="fas fa-angle-down"></i> View detailed analysis + transcript
+              </div>
+          `;
+
+            segmentContent.innerHTML = mainContentHTML;
+
+            // Build expandable content HTML
+            let detailsHTML = `
+              <div class="section-title">
+                  Key Arguments
+                  <button class="toggle-button" data-target="${segmentId}-key-arguments">
+                      <i class="fas fa-chevron-down toggle-icon"></i>
+                  </button>
+              </div>
+              <div class="section-content" id="${segmentId}-key-arguments">
+                  ${renderKeyArguments(segment.key_arguments, segmentId)}
+              </div>
+          `;
+
+            // Add perspective commentary
+            detailsHTML += "";
+            //   `
+            //     <div class="section-title">
+            //         Perspective Commentary
+            //         <button class="toggle-button" data-target="${segmentId}-perspectives">
+            //             <i class="fas fa-chevron-down toggle-icon"></i>
+            //         </button>
+            //     </div>
+            //     <div class="section-content" id="${segmentId}-perspectives">
+            //         ${renderPerspectives(
+            //           segment.perspective_commentary,
+            //           segmentId
+            //         )}
+            //     </div>
+            // `;
+
+            // Add additional notable quotes (if there are more than one)
+            if (segment.notable_quotes && segment.notable_quotes.length > 1) {
+              // Determine if we're dealing with object quotes or string quotes
+              const hasQuoteObjects =
+                typeof segment.notable_quotes[0] === "object";
+              const additionalQuotes = segment.notable_quotes.slice(1);
+
+              detailsHTML += `
+                  <div class="section-title">
+                      More Notable Quotes
+                      <button class="toggle-button" data-target="${segmentId}-quotes">
+                          <i class="fas fa-chevron-down toggle-icon"></i>
+                      </button>
+                  </div>
+                  <div class="section-content" id="${segmentId}-quotes">
+                      ${renderQuotes(
+                        additionalQuotes,
+                        segmentId,
+                        hasQuoteObjects
+                      )}
+                  </div>
+              `;
+            }
+
+            // Add sentiment analysis
+            detailsHTML += `
+              <div class="section-title">
+                  Sentiment Analysis
+                  <button class="toggle-button" data-target="${segmentId}-sentiment">
+                      <i class="fas fa-chevron-down toggle-icon"></i>
+                  </button>
+              </div>
+              <div class="section-content" id="${segmentId}-sentiment">
+                  ${renderSentiment(segment.sentiment_analysis, segmentId)}
+              </div>
+          `;
+
+            // Add transcript
+            detailsHTML += `
+              <div class="section-title">
+                  Transcript
+                  <button class="toggle-button" data-target="${segmentId}-transcript">
+                      <i class="fas fa-chevron-down toggle-icon"></i>
+                  </button>
+              </div>
+              <div class="section-content" id="${segmentId}-transcript">
+                  ${renderTranscript(segment.transcript, segmentId)}
+              </div>
+          `;
+
+            // Add connections to previous segments if available
+            // if (segment.connections_to_previous_segments) {
+            //   detailsHTML += `
+            //       <div class="section-title">
+            //           Connections to Previous Segments
+            //       </div>
+            //       <div class="connections" id="${segmentId}-connections">
+            //           <p>${segment.connections_to_previous_segments}
+            //           <i class="fas fa-share-alt share-icon" data-content="${segment.connections_to_previous_segments}" data-id="${segmentId}-connections"></i>
+            //           </p>
+            //       </div>
+            //   `;
+            // }
+
+            segmentDetails.innerHTML = detailsHTML;
+
+            // Append elements to segment and container
+            segmentElement.appendChild(segmentHeader);
+            segmentElement.appendChild(segmentContent);
+            segmentElement.appendChild(segmentDetails);
+            segmentsContainer.appendChild(segmentElement);
+          });
+
+          // Add event listeners to toggle buttons
+          setupToggleButtons();
+        }
+
+        // Function to render key arguments
+        function renderKeyArguments(arguments, segmentId) {
+          if (!arguments || arguments.length === 0) {
+            return "<p>No key arguments available for this segment.</p>";
+          }
+
+          let html = '<div class="key-arguments">';
+
+          arguments.forEach((arg, index) => {
+            const argId = `${segmentId}-argument-${index}`;
+            html += `
+              <div class="argument" id="${argId}">
+                  <div class="argument-header">
+                      <span class="speaker-name">${arg.speaker_name}</span>
+                      <span class="party-affiliation">${arg.party_affiliation}</span>
+                  </div>
+                  <p>${arg.argument}
+                  <i class="fas fa-share-alt share-icon" data-content="${arg.argument}" data-id="${argId}"></i>
+                  </p>
+              </div>
+          `;
+          });
+
+          html += "</div>";
+          return html;
+        }
+
+        // Function to render perspectives
+        function renderPerspectives(perspectives, segmentId) {
+          if (!perspectives) {
+            return "<p>No perspective commentary available for this segment.</p>";
+          }
+
+          let html = '<div class="perspective-commentary">';
+
+          if (perspectives.progressive) {
+            const progId = `${segmentId}-perspective-progressive`;
+            html += `
+              <div class="perspective progressive" id="${progId}">
+                  <div class="perspective-title">Progressive Perspective</div>
+                  <p>${perspectives.progressive}
+                  <i class="fas fa-share-alt share-icon" data-content="${perspectives.progressive}" data-id="${progId}"></i>
+                  </p>
+              </div>
+          `;
+          }
+
+          if (perspectives.conservative) {
+            const consId = `${segmentId}-perspective-conservative`;
+            html += `
+              <div class="perspective conservative" id="${consId}">
+                  <div class="perspective-title">Conservative Perspective</div>
+                  <p>${perspectives.conservative}
+                  <i class="fas fa-share-alt share-icon" data-content="${perspectives.conservative}" data-id="${consId}"></i>
+                  </p>
+              </div>
+          `;
+          }
+
+          if (perspectives.neutral) {
+            const neutralId = `${segmentId}-perspective-neutral`;
+            html += `
+              <div class="perspective neutral" id="${neutralId}">
+                  <div class="perspective-title">Neutral Perspective</div>
+                  <p>${perspectives.neutral}
+                  <i class="fas fa-share-alt share-icon" data-content="${perspectives.neutral}" data-id="${neutralId}"></i>
+                  </p>
+              </div>
+          `;
+          }
+
+          html += "</div>";
+          return html;
+        }
+
+        // Function to render quotes
+        function renderQuotes(quotes, segmentId, hasQuoteObjects = false) {
+          if (!quotes || quotes.length === 0) {
+            return "<p>No notable quotes available for this segment.</p>";
+          }
+
+          let html = '<div class="notable-quotes">';
+
+          quotes.forEach((quote, index) => {
+            const quoteId = `${segmentId}-quote-${index}`;
+            let quoteText = "";
+            let speaker = "";
+
+            // Handle different quote formats
+            if (hasQuoteObjects) {
+              quoteText = quote.quote;
+              speaker = quote.speaker ? `— ${quote.speaker}` : "";
+            } else {
+              quoteText = quote;
+            }
+
+            html += `
+              <div class="quote" id="${quoteId}">
+                  "${quoteText}" <span class="quote-speaker">${speaker}</span>
+                  <i class="fas fa-share-alt share-icon" data-content="${quoteText}" data-id="${quoteId}"></i>
+              </div>
+          `;
+          });
+
+          html += "</div>";
+          return html;
+        }
+
+        // Function to render topics
+        function renderTopics(topics, segmentId) {
+          if (!topics || topics.length === 0) {
+            return "<p>No topics addressed in this segment.</p>";
+          }
+
+          let html = "";
+
+          topics.forEach((topic, index) => {
+            const topicId = `${segmentId}-topic-${index}`;
+            html += `
+              <span class="topic" id="${topicId}" data-search="${topic.toLowerCase()}">${topic}</span>
+          `;
+          });
+
+          return html;
+        }
+
+        // Function to render sentiment analysis
+        function renderSentiment(sentiment, segmentId) {
+          if (!sentiment) {
+            return "<p>No sentiment analysis available for this segment.</p>";
+          }
+
+          let html = '<div class="sentiment-analysis">';
+
+          if (sentiment.overall_tone) {
+            html += `<p><strong>Overall Tone:</strong> ${sentiment.overall_tone}</p>`;
+          }
+
+          if (sentiment.individual_speaker_tones) {
+            html += '<div class="individual-tones">';
+
+            // Handle different data structures for speaker tones
+            if (Array.isArray(sentiment.individual_speaker_tones)) {
+              // Handle array of objects format
+              sentiment.individual_speaker_tones.forEach((speakerTone) => {
+                html += `<p><strong>${speakerTone.speaker_name}:</strong> ${speakerTone.tone}</p>`;
+              });
+            } else {
+              // Handle object format with speakers as keys
+              for (const [speaker, tone] of Object.entries(
+                sentiment.individual_speaker_tones
+              )) {
+                html += `<p><strong>${speaker}:</strong> ${tone}</p>`;
+              }
+            }
+
+            html += "</div>";
+          }
+
+          html += "</div>";
+          return html;
+        }
+
+        // Function to render transcript
+        function renderTranscript(transcript, segmentId) {
+          if (!transcript || transcript.length === 0) {
+            return "<p>No transcript available for this segment.</p>";
+          }
+
+          let html = '<div class="transcript">';
+
+          // Different handling based on transcript format
+          transcript.forEach((item, index) => {
+            const lineId = `${segmentId}-transcript-line-${index}`;
+
+            // Handle string format with speaker prefix (e.g., "Speaker: Text")
+            if (typeof item === "string") {
+              // Check if the string has a speaker prefix (e.g., "Speaker: Text")
+              const colonIndex = item.indexOf(":");
+              if (colonIndex > 0) {
+                const speaker = item.substring(0, colonIndex).trim();
+                const text = item.substring(colonIndex + 1).trim();
+
+                html += `
+                      <div class="transcript-line" id="${lineId}">
+                          <span class="speaker">${speaker}:</span> ${text}
+                          <i class="fas fa-share-alt share-icon" data-content="${speaker}: ${text}" data-id="${lineId}"></i>
+                      </div>
+                  `;
+              } else {
+                // Simple string format without speaker prefix
+                html += `
+                      <div class="transcript-line" id="${lineId}">
+                          ${item}
+                          <i class="fas fa-share-alt share-icon" data-content="${item}" data-id="${lineId}"></i>
+                      </div>
+                  `;
+              }
+            }
+            // Handle object with speaker keys
+            else if (typeof item === "object") {
+              for (const [speaker, text] of Object.entries(item)) {
+                const speakerLineId = `${lineId}-${speaker.replace(
+                  /\s/g,
+                  "-"
+                )}`;
+                html += `
+                      <div class="transcript-line" id="${speakerLineId}">
+                          <span class="speaker">${speaker}:</span> ${text}
+                          <i class="fas fa-share-alt share-icon" data-content="${speaker}: ${text}" data-id="${speakerLineId}"></i>
+                      </div>
+                  `;
+              }
+            }
+          });
+
+          html += "</div>";
+          return html;
+        }
+
+        // Function to initialize timeline
+        function initializeTimeline(data) {
+          const timeline = document.getElementById("debate-timeline");
+          const totalDuration = 3600; // Assume 1 hour debate (for demo)
+
+          // Define debate start time (for demo purposes)
+          const debateStartTime = new Date();
+          debateStartTime.setHours(19, 30, 0); // 7:30 PM
+
+          data.forEach((segment, index) => {
+            const segmentId = `segment-${index}`;
+
+            // Calculate time based on timestamp
+            let timestamp;
+            let formattedTime;
+
+            if (typeof segment.thumbnail_timestamp === "number") {
+              // Calculate time from seconds offset
+              const segmentTime = new Date(
+                debateStartTime.getTime() + segment.thumbnail_timestamp * 1000
+              );
+              formattedTime = segmentTime.toLocaleTimeString("en-US", {
+                hour: "numeric",
+                minute: "2-digit",
+                hour12: true,
+              });
+              // Calculate position
+              const position =
+                (segment.thumbnail_timestamp / totalDuration) * 100;
+
+              // Create marker
+              const marker = document.createElement("div");
+              marker.className = "timeline-marker";
+              marker.id = `marker-${segmentId}`;
+              marker.style.left = `${position}%`;
+              marker.setAttribute("data-segment", segmentId);
+
+              // Add tooltip
+              const tooltip = document.createElement("div");
+              tooltip.className = "timeline-tooltips";
+              tooltip.textContent = `${formattedTime}`;
+              marker.appendChild(tooltip);
+
+              // Add click event
+              marker.addEventListener("click", () => {
+                // Scroll to segment
+                const segment = document.getElementById(segmentId);
+                segment.scrollIntoView({ behavior: "smooth" });
+
+                // Update URL hash
+                window.history.pushState(null, null, `#${segmentId}`);
+
+                // Update active marker
+                document.querySelectorAll(".timeline-marker").forEach((m) => {
+                  m.classList.remove("active");
+                });
+                marker.classList.add("active");
+              });
+
+              timeline.appendChild(marker);
+            } else if (typeof segment.thumbnail_timestamp === "string") {
+              // Parse timestamp if in string format (HH:MM:SS)
+              const timeParts = segment.thumbnail_timestamp
+                .split(":")
+                .map(Number);
+              const totalSeconds =
+                timeParts[0] * 3600 + timeParts[1] * 60 + timeParts[2];
+
+              // Create marker
+              const marker = document.createElement("div");
+              marker.className = "timeline-marker";
+              marker.id = `marker-${segmentId}`;
+              marker.style.left = `${(totalSeconds / totalDuration) * 100}%`;
+              marker.setAttribute("data-segment", segmentId);
+
+              // Calculate display time
+              const segmentTime = new Date(debateStartTime);
+              segmentTime.setHours(
+                debateStartTime.getHours() + (timeParts[0] || 0),
+                debateStartTime.getMinutes() + (timeParts[1] || 0),
+                debateStartTime.getSeconds() + (timeParts[2] || 0)
+              );
+              formattedTime = segmentTime.toLocaleTimeString("en-US", {
+                hour: "numeric",
+                minute: "2-digit",
+                hour12: true,
+              });
+
+              // Add tooltip
+              const tooltip = document.createElement("div");
+              tooltip.className = "timeline-tooltips";
+              tooltip.textContent = `${formattedTime}`;
+              marker.appendChild(tooltip);
+
+              // Add click event
+              marker.addEventListener("click", () => {
+                // Scroll to segment
+                const segment = document.getElementById(segmentId);
+                segment.scrollIntoView({ behavior: "smooth" });
+
+                // Update URL hash
+                window.history.pushState(null, null, `#${segmentId}`);
+
+                // Update active marker
+                document.querySelectorAll(".timeline-marker").forEach((m) => {
+                  m.classList.remove("active");
+                });
+                marker.classList.add("active");
+              });
+
+              timeline.appendChild(marker);
+            } else {
+              // Default fallback
+              const defaultSeconds = index * 30;
+
+              // Create marker
+              const marker = document.createElement("div");
+              marker.className = "timeline-marker";
+              marker.id = `marker-${segmentId}`;
+              marker.style.left = `${(defaultSeconds / totalDuration) * 100}%`;
+              marker.setAttribute("data-segment", segmentId);
+
+              // Calculate display time
+              const segmentTime = new Date(
+                debateStartTime.getTime() + defaultSeconds * 1000
+              );
+              formattedTime = segmentTime.toLocaleTimeString("en-US", {
+                hour: "numeric",
+                minute: "2-digit",
+                hour12: true,
+              });
+
+              // Add tooltip
+              const tooltip = document.createElement("div");
+              tooltip.className = "timeline-tooltips";
+              tooltip.textContent = `${formattedTime}`;
+              marker.appendChild(tooltip);
+
+              // Add click event
+              marker.addEventListener("click", () => {
+                // Scroll to segment
+                const segment = document.getElementById(segmentId);
+                segment.scrollIntoView({ behavior: "smooth" });
+
+                // Update URL hash
+                window.history.pushState(null, null, `#${segmentId}`);
+
+                // Update active marker
+                document.querySelectorAll(".timeline-marker").forEach((m) => {
+                  m.classList.remove("active");
+                });
+                marker.classList.add("active");
+              });
+
+              timeline.appendChild(marker);
+            }
+          });
+        }
+
+        // Function to toggle segment details expansion
+        function toggleDetails(detailsId, forceOpen = false) {
+          const detailsElement = document.getElementById(detailsId);
+          const isCurrentlyExpanded =
+            detailsElement.classList.contains("expanded");
+
+          // Find parent segment content
+          const parentSegmentContent = detailsElement.parentElement; //.closest(".segment-content");
+          const parentSegmentHeader = document.querySelector(
+            `[data-target="${parentSegmentContent.id}"]`
+          );
+
+          // If not forcing open and segment was already expanded, we're closing it
+          if (!forceOpen && isCurrentlyExpanded) {
+            // Close it
+            detailsElement.classList.remove("expanded");
+          } else {
+            // First ensure parent segment is expanded
+            if (
+              parentSegmentContent &&
+              !parentSegmentContent.classList.contains("expanded")
+            ) {
+              parentSegmentContent.classList.add("expanded");
+              if (parentSegmentHeader) {
+                parentSegmentHeader.classList.add("expanded");
+              }
+            }
+
+            // Open this segment's details
+            detailsElement.classList.add("expanded");
+
+            // Update URL hash
+            window.history.pushState(null, null, `#${detailsId}`);
+          }
+        }
+
+        // Add this function to window so it can be called from HTML
+        window.toggleDetails = toggleDetails;
+
+        // Function to setup toggle buttons
+        function setupToggleButtons() {
+          document.querySelectorAll(".toggle-button").forEach((button) => {
+            const targetId = button.getAttribute("data-target");
+            const target = document.getElementById(targetId);
+            const icon = button.querySelector(".toggle-icon");
+            // debugger;
+            button.parentElement.addEventListener("click", (e) => {
+              e.stopPropagation(); // Prevent event bubbling
+
+              // Toggle section
+              target.classList.toggle("expanded");
+
+              // Toggle icon
+              if (icon) {
+                icon.classList.toggle("expanded");
+              }
+
+              // Update URL hash
+              if (target.classList.contains("expanded")) {
+                window.history.pushState(null, null, `#${targetId}`);
+              }
+            });
+          });
+        }
+
+        // Function to setup search functionality
+        function setupSearch() {
+          const searchInput = document.getElementById("search-input");
+          const searchButton = document.getElementById("search-button");
+
+          // Search on button click
+          searchButton.addEventListener("click", () => {
+            performSearch(searchInput.value);
+          });
+
+          // Search on Enter key
+          searchInput.addEventListener("keyup", (e) => {
+            if (e.key === "Enter") {
+              performSearch(searchInput.value);
+            }
+          });
+
+          // Clear search when input is cleared
+          searchInput.addEventListener("input", () => {
+            if (searchInput.value === "") {
+              clearSearch();
+            }
+          });
+        }
+
+        // Function to perform search
+        function performSearch(query) {
+          query = query.trim().toLowerCase();
+
+          if (!query) {
+            return;
+          }
+
+          // Clear previous search
+          clearSearch();
+
+          // Open all segments for searching
+          document.querySelectorAll(".segment-content").forEach((content) => {
+            content.classList.add("expanded");
+          });
+
+          // Open all sections for searching
+          document.querySelectorAll(".section-content").forEach((section) => {
+            section.classList.add("expanded");
+          });
+
+          // Search text content
+          const textElements = document.querySelectorAll(
+            ".segment-summary, .argument p, .perspective p, .quote, .transcript-line, .connections p"
+          );
+          let matchCount = 0;
+          let firstMatch = null;
+
+          textElements.forEach((element) => {
+            const text = element.textContent.toLowerCase();
+            if (text.includes(query)) {
+              matchCount++;
+              highlightText(element, query);
+
+              if (!firstMatch) {
+                firstMatch = element;
+              }
+            }
+          });
+
+          // Search topics
+          document.querySelectorAll(".topic").forEach((topic) => {
+            if (topic.getAttribute("data-search").includes(query)) {
+              matchCount++;
+              topic.style.backgroundColor = "#e63946";
+
+              if (!firstMatch) {
+                firstMatch = topic;
+              }
+            }
+          });
+
+          // Show results and scroll to first match
+          if (matchCount > 0) {
+            alert(`Found ${matchCount} matches for "${query}"`);
+
+            if (firstMatch) {
+              // Ensure parent segment is expanded
+              const parentSegment = firstMatch.closest(".segment");
+              if (parentSegment) {
+                const segmentId = parentSegment.id;
+                toggleSegment(segmentId, true);
+              }
+
+              // Scroll to the match
+              firstMatch.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              });
+            }
+          } else {
+            alert(`No matches found for "${query}"`);
+          }
+        }
+
+        // Function to clear search
+        function clearSearch() {
+          // Remove highlights
+          document.querySelectorAll(".highlight").forEach((highlight) => {
+            const parent = highlight.parentNode;
+            parent.replaceChild(
+              document.createTextNode(highlight.textContent),
+              highlight
+            );
+            parent.normalize();
+          });
+
+          // Reset topic colors
+          document.querySelectorAll(".topic").forEach((topic) => {
+            topic.style.backgroundColor = "#4a6fa5";
+          });
+        }
+
+        // Function to highlight text
+        function highlightText(element, query) {
+          const html = element.innerHTML;
+          const regex = new RegExp(`(${escapeRegExp(query)})`, "gi");
+          element.innerHTML = html.replace(
+            regex,
+            '<span class="highlight">$1</span>'
+          );
+        }
+
+        // Function to escape regex special characters
+        function escapeRegExp(string) {
+          return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        }
+
+        // Function to setup share modal
+        function setupShareModal() {
+          const modal = document.getElementById("share-modal");
+          const closeButton = document.querySelector(".close-button");
+
+          // Close modal with close button
+          closeButton.addEventListener("click", () => {
+            modal.style.display = "none";
+          });
+
+          // Close modal when clicking outside content
+          window.addEventListener("click", (e) => {
+            if (e.target === modal) {
+              modal.style.display = "none";
+            }
+          });
+
+          // Add event listeners to share icons
+          document.addEventListener("click", (e) => {
+            if (e.target.classList.contains("share-icon")) {
+              const content = e.target.getAttribute("data-content");
+              const id = e.target.getAttribute("data-id");
+
+              openShareModal(content, id);
+            }
+          });
+
+          // Setup share buttons
+          setupShareButtons();
+        }
+
+        // Function to open share modal
+        function openShareModal(content, id) {
+          const modal = document.getElementById("share-modal");
+          const shareText = document.getElementById("share-text");
+
+          // Set content and URL
+          shareText.textContent = content;
+          shareText.setAttribute("data-id", id);
+          shareText.setAttribute(
+            "data-url",
+            `${window.location.origin}${window.location.pathname}#${id}`
+          );
+
+          // Show modal
+          modal.style.display = "block";
+        }
+
+        // Function to setup share buttons
+        function setupShareButtons() {
+          // Twitter share
+          document
+            .querySelector(".share-button.twitter")
+            .addEventListener("click", () => {
+              const shareText = document.getElementById("share-text");
+              const text = shareText.textContent;
+              const url = shareText.getAttribute("data-url");
+
+              // Truncate if needed
+              const truncatedText =
+                text.length > 200 ? text.substring(0, 197) + "..." : text;
+
+              window.open(
+                `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+                  truncatedText
+                )}&url=${encodeURIComponent(url)}`,
+                "_blank"
+              );
+            });
+
+          // Facebook share
+          document
+            .querySelector(".share-button.facebook")
+            .addEventListener("click", () => {
+              const shareText = document.getElementById("share-text");
+              const url = shareText.getAttribute("data-url");
+
+              window.open(
+                `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                  url
+                )}`,
+                "_blank"
+              );
+            });
+
+          // LinkedIn share
+          document
+            .querySelector(".share-button.linkedin")
+            .addEventListener("click", () => {
+              const shareText = document.getElementById("share-text");
+              const url = shareText.getAttribute("data-url");
+
+              window.open(
+                `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+                  url
+                )}`,
+                "_blank"
+              );
+            });
+
+          // Copy link
+          document
+            .querySelector(".share-button.copy")
+            .addEventListener("click", () => {
+              const shareText = document.getElementById("share-text");
+              const url = shareText.getAttribute("data-url");
+
+              navigator.clipboard
+                .writeText(url)
+                .then(() => {
+                  alert("Link copied to clipboard!");
+                })
+                .catch((err) => {
+                  console.error("Could not copy link: ", err);
+                });
+            });
+        }
+
+        // Function to setup floating share button
+        function setupFloatingShareButton() {
+          const floatingBtn = document.getElementById("floating-share-btn");
+
+          floatingBtn.addEventListener("click", () => {
+            // Get current URL
+            const url = window.location.href;
+
+            // Create share URL with current position
+            const shareUrl = url.includes("#") ? url : `${url}#current-view`;
+
+            // Open share modal with current page
+            openShareModal("Share the current debate analysis", "current-view");
+            document
+              .getElementById("share-text")
+              .setAttribute("data-url", shareUrl);
+          });
+        }
+
+        // Function to check URL hash and open relevant segment
+        function checkUrlHash() {
+          const hash = window.location.hash;
+          if (hash) {
+            const id = hash.substring(1); // Remove the # character
+            const element = document.getElementById(id);
+
+            if (element) {
+              // If it's a segment
+              if (element.classList.contains("segment")) {
+                // Expand its content
+                const contentId = `${element.id}-content`;
+                const content = document.getElementById(contentId);
+                const header = document.querySelector(
+                  `[data-target="${contentId}"]`
+                );
+
+                if (content) {
+                  content.classList.add("expanded");
+                  if (header) header.classList.add("expanded");
+                }
+
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+              // If it's a segment content
+              else if (element.classList.contains("segment-content")) {
+                element.classList.add("expanded");
+                const header = document.querySelector(
+                  `[data-target="${element.id}"]`
+                );
+                if (header) header.classList.add("expanded");
+
+                // Scroll to element
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+              // If it's a segment details
+              else if (id.includes("-details")) {
+                // Find parent segment content
+                const parentSegmentContent = element.parentElement;
+                // element.closest(".segment-content");
+                const parentSegmentHeader = document.querySelector(
+                  `[data-target="${parentSegmentContent.id}"]`
+                );
+
+                // Expand parent content first
+                if (parentSegmentContent) {
+                  parentSegmentContent.classList.add("expanded");
+                  if (parentSegmentHeader)
+                    parentSegmentHeader.classList.add("expanded");
+                }
+
+                toggleDetails(id, true);
+
+                // Scroll to element after a slight delay to allow expansion
+                setTimeout(() => {
+                  element.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }, 300);
+              }
+              // If it's a section within a segment
+              else {
+                const parentSegment = element.closest(".segment");
+                const parentDetails = element.closest(".segment-details");
+                const parentContent = element.closest(".segment-content");
+
+                // Expand the parent content if it exists
+                if (parentContent) {
+                  parentContent.classList.add("expanded");
+                  const header = document.querySelector(
+                    `[data-target="${parentContent.id}"]`
+                  );
+                  if (header) header.classList.add("expanded");
+                }
+
+                if (parentSegment && parentDetails) {
+                  toggleDetails(parentDetails.id, true);
+
+                  // If it's a section content, expand it
+                  if (element.classList.contains("section-content")) {
+                    element.classList.add("expanded");
+                  }
+
+                  // Scroll to element after a slight delay to allow expansion
+                  setTimeout(() => {
+                    element.scrollIntoView({
+                      behavior: "smooth",
+                      block: "center",
+                    });
+                  }, 300);
+                }
+              }
+            }
+          }
+        }
+
+        // Get checkbox elements
+        const progressiveToggle = document.getElementById("toggle-progressive");
+        const conservativeToggle = document.getElementById(
+          "toggle-conservative"
+        );
+        const neutralToggle = document.getElementById("toggle-neutral");
+
+        // Add event listeners
+        progressiveToggle.addEventListener("change", function () {
+          toggleCommentaryType("progressive", this.checked);
+        });
+
+        conservativeToggle.addEventListener("change", function () {
+          toggleCommentaryType("conservative", this.checked);
+        });
+
+        neutralToggle.addEventListener("change", function () {
+          toggleCommentaryType("neutral", this.checked);
+        });
+
+        // Function to toggle commentary visibility
+        function toggleCommentaryType(type, show) {
+          const commentaries = document.querySelectorAll(
+            `.perspective.${type}`
+          );
+          commentaries.forEach((commentary) => {
+            commentary.style.display = show ? "block" : "none";
+          });
+        }
+
+        // Function to setup segment headers
+        function setupSegmentHeaders() {
+          document.querySelectorAll(".segment-header").forEach((header) => {
+            const targetId = header.getAttribute("data-target");
+            header.addEventListener("click", () => {
+              const target = document.getElementById(targetId);
+
+              // Toggle expanded class on content
+              target.classList.toggle("expanded");
+
+              // Toggle expanded class on header for arrow rotation
+              header.classList.toggle("expanded");
+
+              // Update URL hash when expanding
+              if (target.classList.contains("expanded")) {
+                window.history.pushState(null, null, `#${targetId}`);
+              }
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

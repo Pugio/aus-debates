@@ -1,0 +1,107 @@
+{
+  "speakers_present": [
+    "Dutton",
+    "Albanese",
+    "Moderator",
+    "Woman"
+  ],
+  "debate_segment_topic": "Housing",
+  "transcript": [
+    "Woman: Um, I work for the Department of Education and I've seen that there's quite a big difference between public versus private. I was wondering if we're getting any sort of funding towards public education in the near future.",
+    "Moderator: Might go uh Mr. Dutton, kick that one off.",
+    "Dutton: Well, I think it's an incredibly important question and it's important because parents have a choice to make and whether that's for the public system or for the private system, we have supported both and we support increased funding going into this election as well and there's a position which is identical between the two parties in relation to funding for public schools and for private schools as well. Uh I think it is important that parents are able to have that choice and that we can fund the infrastructure and that we can support teacher development and make sure that we've got an education system which is fit for purpose. We live in an incredibly competitive environment and we need to make sure that the outcomes in our schools are meeting the standards and expectations.",
+    "Albanese: Well, thanks very much Monica for your question and I admire anyone who is a public school teacher. Uh you do incredible work. And one of the things we've had to deal with is the last time government changed in Australia in 2013, in the 2014 budget 30 billion dollars was ripped out of public schools in that budget. 50 billion dollars was ripped out of hospitals. And we've had to deal with that for a long time. You'd be aware way back now, more than a decade ago, there was the Gonski reforms which were about giving, put simply, every child to get free, a fair funding. So that if they fall behind, they can get that assistance. Now we've delivered that in a deal negotiated with every single state and territory in the country. 14.6 billion of",
+    "Albanese: additional dollars so that every student whether they are going to a public school or a private school can get the funding that they deserve and that includes the deal so that they get proper proper support so that if a child falls behind at the moment NAPLAN is a bit too late we want to do testing in year one so if a child falls behind they can get that specialist one on one tutoring or small group to make sure that they don't fall behind because if you address that really early then every child can have the opportunity to fulfill their aspirations.",
+    "Moderator: Kieran I just wanted to follow up on that real quickly.",
+    "Dutton: Yeah sure",
+    "Moderator: The fact is, that there were no cuts.",
+    "Moderator: The Prime Minister goes out with this medicare campaign and education scare campaign, it is not a truthful statement. Now what the Prime Minister is saying is that the funding didn't go up by as much as he would want each year, but there was no year where funding was cut from hospitals or...",
+    "Dutton: Or education.",
+    "Moderator: Exactly.",
+    "Moderator: So if we ask why we've got a housing crisis and why it's difficult, we can point to that because there's massive demand for housing, and Australian kids are missing out, and rents are up by about 18%. I want desperately to make sure we can get an opportunity for young people to believe in and achieve again the dream of homeownership.",
+    "Dutton: There's a 42 international students coming into our country for every one student accomodation unit that's been approved. That has had a big impact on the cost of a domestic student going to University. It does change the dynamics within many universities. For example, at the Sydney University, you've now got a much higher mix in terms of international students to domestic students, which changes the dynamic on campus. But I want to make sure that we can get Australian kids into housing as quickly as possible. We can't do that because obviously, if a million people come here over 2 years, that makes an impact."
+  ],
+  "segment_summary": "A voter from education poses a question on funding. Albanese and Dutton provide differing solutions, and both have solutions on the housing market for the future.",
+  "key_arguments": [
+    {
+      "argument": "For public education funding is needed.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "People's Forum",
+      "speaker_name": "Woman"
+    },
+    {
+      "argument": "If student isn't doing well, then tutoring and extra help is needed.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "That there were no cuts on Medicare and The Prime Minister uses that for their government campaign.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Moderator",
+      "speaker_name": "Moderator"
+    },
+    {
+      "argument": "Housing issues and many students more students",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Each part provides their talking points to help resonate with the audience. And that housing will be a big issues for the party to win.",
+    "key_devices_used": [
+      "Emotion",
+      "Fact",
+      "Assertion",
+      "Hypophora"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "Calling out the Prime Minister on using misleading information will help win the support back.",
+    "neutral": "Using numbers and stats may or may not work, but you have to fact check before stating anything so the audience understands.",
+    "progressive": "Housing is and should be the most important thing on everyone's campaign."
+  },
+  "connections_to_previous_segments": "Builds on to the top the prior mentions to support the audience with real life problems.",
+  "interaction_dynamics": "Direct Q&A. Each sides has valid points to make that connect with the audience.",
+  "notable_quotes": [
+    {
+      "quote": "That there were no cuts.",
+      "speaker": "Moderator"
+    },
+    {
+      "quote": "What Dutton says about the supply of international students and what that's doing to rents here.",
+      "speaker": "Moderator"
+    }
+  ],
+  "topics_addressed": [
+    "Student issue",
+    "International relations",
+    "Medicare Funding",
+    "Housing funding"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Dutton",
+        "tone": "Concerned"
+      },
+      {
+        "speaker_name": "Albanese",
+        "tone": "Direct"
+      },
+      {
+        "speaker_name": "Woman",
+        "tone": "Direct"
+      },
+      {
+        "speaker_name": "Moderator",
+        "tone": "Engaging"
+      }
+    ],
+    "overall_tone": "Direct and concerned"
+  },
+  "thumbnail_timestamp": 10.0,
+  "segment_tiny_summary": "Housing Student ",
+  "segment_concise_summary": "The leaders touch upon education and that international relations is something that they believe helps the country to grow in all aspects for our country."
+}

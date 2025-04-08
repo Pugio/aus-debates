@@ -1,0 +1,83 @@
+{
+  "speakers_present": [
+    "Hibba",
+    "Dutton",
+    "Albanese",
+    "Moderator"
+  ],
+  "debate_segment_topic": "People's Forum",
+  "transcript": [
+    "Hibba: I'm extremely worried and concerned about the funding of weaponry aiding the onslaught on the innocent people of Gaza. What are you doing to stop this Prime Minister and Opposition leader what will you do about this if you are elected?",
+    "Moderator: Prime Minister first you.",
+    "Albanese: Well, thank you very much for the question and I certainly understand that for many Australians of particularly those with families or relatives either in Israel or in Gaza or indeed in Lebanon this has been a very traumatic period.",
+    "Albanese: My government's approach is that every innocent life matters and we want to see a ceasefire. We want to see hostages released. We want to see aid get through to Gaza. I must say though there are no Australian weaponry involved in what is going on in Gaza. that is just not the case. Uh we have made sure as well that Australia has taken I think a responsible position of continuing to call for not just the short-term issues in terms of"
+  ],
+  "segment_summary": "Hibba, a voter in the audience, states she is extremely worried about the funding of weaponry in Gaza. Albanese responds stating his government's approach is that every innocent life matters. He states the government wants to see hostages released. There is no Australian weaponry.",
+  "key_arguments": [
+    {
+      "argument": "Every innocent life matters",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "We want to see a ceasefire",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    },
+    {
+      "argument": "There is no Australian weaponry involved in Gaza",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Australian Labor Party",
+      "speaker_name": "Albanese"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Albanese starts off the response and goes over his government's approach.",
+    "key_devices_used": [
+      "Assertion",
+      "Emotion",
+      "Fact"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "By acknowledging every life matters, voters are more likely to listen and agree to what the government is doing about it.",
+    "neutral": "Albanese appears to be trying to please both sides by agreeing and appealing to their emotion. It could be seen that he is trying to defend the government's role.",
+    "progressive": "It's effective to focus on humanity and acknowledge how people are suffering."
+  },
+  "connections_to_previous_segments": "This is a new segment that highlights a voter speaking out.",
+  "interaction_dynamics": "The interaction is a discussion between Hibba and Albanese. Albanese is responding about every life matters.",
+  "notable_quotes": [
+    {
+      "quote": "My government's approach is that every innocent life matters",
+      "speaker": "Albanese"
+    },
+    {
+      "quote": "There is no Australian weaponry involved in Gaza",
+      "speaker": "Albanese"
+    }
+  ],
+  "topics_addressed": [
+    "Global relations",
+    "Gaza",
+    "Australian relations",
+    "Australia weaponry"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Albanese",
+        "tone": "Neutral, informative"
+      },
+      {
+        "speaker_name": "Hibba",
+        "tone": "Concerned"
+      }
+    ],
+    "overall_tone": "Concerned, Informative"
+  },
+  "thumbnail_timestamp": 7.0,
+  "segment_tiny_summary": "Gaza issue",
+  "segment_concise_summary": "A concerned voter asks about Gaza. Albanese responds with his government's position on no Australian involvement."
+}

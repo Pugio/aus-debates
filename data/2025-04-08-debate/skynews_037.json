@@ -1,0 +1,98 @@
+{
+  "speakers_present": [
+    "Dutton",
+    "Albanese",
+    "Moderator",
+    "Woman"
+  ],
+  "debate_segment_topic": "People's Forum",
+  "transcript": [
+    "Woman: Um, I work for the Department of Education and I've seen that there's quite a big difference between public versus private. I was wondering if we're getting any sort of funding towards public education in the near future.",
+    "Moderator: Might go uh Mr. Dutton, kick that one off.",
+    "Dutton: Well, I think it's an incredibly important question and it's important because parents have a choice to make and whether that's for the public system or for the private system, we have supported both and we support increased funding going into this election as well and there's a position which is identical between the two parties in relation to funding for public schools and for private schools as well. Uh I think it is important that parents are able to have that choice and that we can fund the infrastructure and that we can support teacher development and make sure that we've got an education system which is fit for purpose. We live in an incredibly competitive environment and we need to make sure that the outcomes in our schools are meeting the standards and expectations."
+  ],
+  "segment_summary": "A woman from the Department of Education asks about funding for public education. Dutton responds that both parties support increased funding for both public and private schools, and parents should have a choice. He emphasizes the importance of infrastructure, teacher development, and ensuring the education system is fit for purpose in a competitive environment.",
+  "key_arguments": [
+    {
+      "argument": "Increased funding for public education is needed.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "People's Forum",
+      "speaker_name": "Woman"
+    },
+    {
+      "argument": "Both parties support increased funding for both public and private schools.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Parents should have a choice between public and private education.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "Infrastructure and teacher development are important for a fit-for-purpose education system.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    },
+    {
+      "argument": "School outcomes must meet standards and expectations due to a competitive environment",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal-National Coalition",
+      "speaker_name": "Dutton"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "Dutton speaks in a measured and reassuring tone, emphasizing common ground and shared goals. The question from the audience immediately identifies a policy area of key importance.",
+    "key_devices_used": [
+      "Appeal to shared values",
+      "Emphasis on choice",
+      "Use of generalities"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "Dutton's answer will reassure voters that the Coalition supports both public and private education, acknowledging parental choice. Emphasizing 'fit for purpose' could signal a focus on practical skills development to enhance competitiveness.",
+    "neutral": "Dutton's response is a broad commitment to supporting both public and private education. He avoids making specific promises, instead highlighting the need for infrastructure and teacher development. The emphasis on competitiveness indicates a focus on educational outcomes that prepare students for the workforce.",
+    "progressive": "The lack of specific commitment to increased funding for public education may concern progressives, particularly given perceived disparities. The emphasis on 'fit for purpose' could be interpreted as prioritizing vocational training over broader educational goals."
+  },
+  "connections_to_previous_segments": "This segment transitions to a new topic, education funding, prompted by a question from a member of the audience.",
+  "interaction_dynamics": "The interaction begins with a direct question from a member of the public. Dutton provides a prepared response.",
+  "notable_quotes": [
+    {
+      "quote": "Parents have a choice to make and whether that's for the public system or for the private system.",
+      "speaker": "Dutton"
+    },
+    {
+      "quote": "We've got an education system which is fit for purpose.",
+      "speaker": "Dutton"
+    }
+  ],
+  "topics_addressed": [
+    "Education funding",
+    "Public education",
+    "Private education",
+    "Parental choice",
+    "Teacher development",
+    "Infrastructure",
+    "Education standards",
+    "Education outcomes"
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Woman",
+        "tone": "Inquisitive, concerned"
+      },
+      {
+        "speaker_name": "Dutton",
+        "tone": "Reassuring, measured, broad"
+      }
+    ],
+    "overall_tone": "Informative, reassuring"
+  },
+  "thumbnail_timestamp": 45.0,
+  "segment_tiny_summary": "Education funding",
+  "segment_concise_summary": "A woman asks about public education funding; Dutton responds that both parties support increased funding for both public and private schools and emphasizes parental choice."
+}
