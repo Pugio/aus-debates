@@ -685,7 +685,10 @@
 
     <script>
       async function fetchData() {
-        const API_BASE = "/data/2025-04-08-debate/skynews_";
+        let API_BASE = "/data/2025-04-08-debate/skynews_";
+        if (window.location.href.includes("github.io")) {
+          API_BASE = "/aus-debates" + API_BASE;
+        }
         const SKYNEWS_START = 29;
         // debugger;
         // check if data is cached locally
