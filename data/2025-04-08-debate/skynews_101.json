@@ -1,0 +1,83 @@
+{
+  "speakers_present": [
+    "Andrew Clennell"
+  ],
+  "debate_segment_topic": "Economic management",
+  "transcript": [
+    "Katie Allen: will give every Australian a new deal. Labour in the coalition want net zero. Zero jobs, zero prosperity and zero future. A vote for labour all the coalition is a vote to destroy your family and their livelihood and increase the cost of living. China has become a manufacturing superpower on the back of Australian iron ore and coal and its economy is one of the largest in the world. China has continued to build 750 coal fired power stations to dominate markets in Europe, the US with Australian iron ore and coal. Australia has a trillion dollars of debt. China imports 80% of its iron ore from Australia which has made it the world's biggest manufacturer dominating markets in Europe, the US and the rest of the world all on Australian iron ore. China can't buy it from anywhere else. With a 15% export license fee on iron ore exports we can pay off our debt. Do you want the Chinese to pay off our debt or you and your family. We can keep Medicare.",
+    "Katie Allen: China"
+  ],
+  "segment_summary": "Katie Allen argues that net zero is dangerous and that China is manufacturing using Australian resources while Australians will be forced into debt. She proposes a 15% export fee on iron ore from China to pay off Australia's debt, giving Medicare.",
+  "key_arguments": [
+    {
+      "argument": "Zero net results to jobs are good. It's zero jobs, zero prosperity, zero future. Destroy their family and their livelihood and increase the cost of living.  all on Australian iron ore.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal Party",
+      "speaker_name": "Katie Allen"
+    },
+    {
+      "argument": "Australia has a trillion dollars of debt.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal Party",
+      "speaker_name": "Katie Allen"
+    },
+    {
+      "argument": "15 percent from China importing from Australia will fix Australia's debt instead from our citizens paying",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal Party",
+      "speaker_name": "Katie Allen"
+    },
+    {
+      "argument": "China can't buy it from anywhere else.",
+      "claim_needs_fact_check": true,
+      "party_affiliation": "Liberal Party",
+      "speaker_name": "Katie Allen"
+    },
+    {
+      "argument": "Every action will be destroyed.",
+      "claim_needs_fact_check": false,
+      "party_affiliation": "Liberal Party",
+      "speaker_name": "Katie Allen"
+    }
+  ],
+  "rhetorical_analysis": {
+    "communication_style_notes": "The speech contains all information with little room for discussion. The speaker focuses on creating a big contrast and all of the action to be doom.",
+    "key_devices_used": [
+      "Direct quotes",
+      "Emotion",
+      "Number stats",
+      "Exhortatio"
+    ]
+  },
+  "perspective_commentary": {
+    "conservative": "The points that are touching and all those points all to make one, the voters will lean their.",
+    "neutral": "With these type of stats, the person will need to ensure that they are not all correct and that this could have a bad outcome.",
+    "progressive": "We should ensure that all the information with the voters are as accurate and that everyone should research."
+  },
+  "connections_to_previous_segments": "Not connected at all.",
+  "interaction_dynamics": "Not in there.",
+  "notable_quotes": [
+    {
+      "quote": "zero prosperity and zero future.",
+      "speaker": "Katie Allen"
+    }
+  ],
+  "topics_addressed": [
+    "International relations",
+    "Tax bill",
+    "Cost of living",
+    "China."
+  ],
+  "sentiment_analysis": {
+    "individual_speaker_tones": [
+      {
+        "speaker_name": "Katie Allen",
+        "tone": "Fear is getting more attention from her statements"
+      }
+    ],
+    "overall_tone": "Fearful"
+  },
+  "thumbnail_timestamp": 1.0,
+  "segment_tiny_summary": "Fear speech",
+  "segment_concise_summary": "All points are shared to help persuade the audience into taking actions to make good. With some fear into them."
+}
